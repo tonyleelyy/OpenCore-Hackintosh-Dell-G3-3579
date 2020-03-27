@@ -15,7 +15,7 @@ Origin: [CerteKim](https://github.com/CerteKim)'s [Dell-G3-3579-Hackintosh-OpenC
 My version of this EFI is edited from CerteKim's Opencore Hackintosh project.
 I made it work for my i5-8300H, GTX1050, no usb type-c version Dell G3 3579.
 
-> I will try to update this project as fast as possible, that means it will be adapted to the latest version of OpenCore and macOS
+> I will try to update this project as fast as possible, which means it will be adapted to the latest version of OpenCore and macOS
 
 ## Configuration
 
