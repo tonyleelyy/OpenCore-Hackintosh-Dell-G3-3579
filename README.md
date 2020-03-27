@@ -26,7 +26,7 @@ I made it work for my i5-8300H, GTX1050, no USB Type-C version of Dell G3 3579.
 | Memory | 8GB Micron DDR4 2666Mhz | ✅ |
 | SSD | Hikvision C2000Pro 512GB | ✅ |
 | HDD | WD10SPZX 1TB | ✅ |
-| iGPU | Intel UHD Graphics 630i | ✅ |
+| iGPU | Intel UHD Graphics 630 | ✅ |
 | dGPU | NVIDIA GeForce GTX 1050 4G | 🚫 |
 | Sound Card | Realtek ALC236 | ✅ |
 | Ethernet Card | Realtek RTL8111 | ✅ |
