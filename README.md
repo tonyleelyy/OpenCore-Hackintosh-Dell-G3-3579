@@ -9,6 +9,7 @@
 English | [中文](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README_CN.md)（同步更新）
 
 ### Latest Release: [v1.0](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v1.0)
+
 **macOS Version: 10.15.4**
 
 **OpenCore Version: 0.5.7**
