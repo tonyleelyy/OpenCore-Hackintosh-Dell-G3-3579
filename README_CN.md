@@ -26,7 +26,7 @@
 |   内存   |    8GB Micron DDR4 2666Mhz    |    ✅     |
 | 固态硬盘 |   Hikvision C2000Pro 512GB    |    ✅     |
 | 机械硬盘 |         WD10SPZX 1TB          |    ✅     |
-| 核芯显卡 |    Intel UHD Graphics 630i    |    ✅     |
+| 核芯显卡 |    Intel UHD Graphics 630    |    ✅     |
 | 独立显卡 |  NVIDIA GeForce GTX 1050 4G   |    🚫     |
 |   声卡   |        Realtek ALC236         |    ✅     |
 | 有线网卡 |        Realtek RTL8111        |    ✅     |
