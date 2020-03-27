@@ -8,7 +8,7 @@
 
 [English](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README.md) | 中文
 
-### 最新的Release：1.0
+### 最新的Release：[v1.0](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v1.0)
 
 来源: [CerteKim](https://github.com/CerteKim)的 [Dell-G3-3579-Hackintosh-OpenCore](https://github.com/CerteKim/Dell-G3-3579-Hackintosh-OpenCore) （万分感谢！）
 
