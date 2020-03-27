@@ -13,7 +13,7 @@
 来源: [CerteKim](https://github.com/CerteKim)的 [Dell-G3-3579-Hackintosh-OpenCore](https://github.com/CerteKim/Dell-G3-3579-Hackintosh-OpenCore) （万分感谢！）
 
 我这一版本的EFI修改自CerteKim的OpenCore黑苹果项目。
-我将它适配了我的i5-8300H，GTX1080，没有USB Type-C版本的Dell G3 3579。
+我将它适配了我的i5-8300H，GTX1050，没有USB Type-C版本的Dell G3 3579。
 
 > 我会尽可能迅速地更新这一项目，尽量保证适配最新版本的OpenCore和macOS系统。
 
