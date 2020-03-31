@@ -22,6 +22,7 @@ I made it work for my i5-8300H, GTX1050, no USB Type-C version of Dell G3 3579.
 > I will try to update this project as fast as possible, which means it will be adapted to the latest version of OpenCore and macOS
 
 ## Update
+- 2020-03-31: Deleted SSDT-USBX and added USBPower.kext.
 - 2020-03-28: I found that the Caps Lock light work perfectly after the lastest update!
 
 ## To-Do
