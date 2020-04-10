@@ -24,7 +24,7 @@ I made it work for my i5-8300H, GTX1050, no USB Type-C version of Dell G3 3579.
 ## Update
 - 2020-04-11: 
 
-  Updated to MacOS 10.15.4 19E287. Changed OpenCore to offical release 0.5.7 ver. and fix the structure of Config.plist.
+  Updated to MacOS 10.15.4 19E287. Changed OpenCore to offical release 0.5.7 ver. and fixed the structure of Config.plist.
 
   Updated Lilu, VirtualSMC, AppleALC, WhateverGreen, SMCBatteryManager, NVMeFix.
 
