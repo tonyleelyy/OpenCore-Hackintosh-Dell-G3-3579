@@ -8,11 +8,11 @@
 
 [English](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README.md) | 中文
 
-### 最新的Release：[v1.0](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v1.0)
+### 最新的Release：[v1.2](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v1.2)
 
-**macOS版本：10.15.4**
+**macOS版本：10.15.4 19E287**
 
-**OpenCore版本：0.5.7**
+**OpenCore版本：[0.5.7 Offical](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.7)**
 
 来源: [CerteKim](https://github.com/CerteKim)的 [Dell-G3-3579-Hackintosh-OpenCore](https://github.com/CerteKim/Dell-G3-3579-Hackintosh-OpenCore) （万分感谢！）
 
@@ -22,7 +22,16 @@
 > 我会尽可能迅速地更新这一项目，尽量保证适配最新版本的OpenCore和macOS系统。
 
 ## 更新
+- 2020-04-11：
+
+  更新至 MacOS 10.15.4 19E287。更新 OpenCore 到官方Release 0.5.7 版本并完善了Config.plist的结构
+
+  更新 Lilu, VirtualSMC, AppleALC, WhateverGreen, SMCBatteryManager, NVMeFix.
+
+  更新并定制了 IntelBluetoothFirmware, 驱动文件大幅缩小。同时更新了 IntelBluetoothInjector.
+
 - 2020-03-31：删除了SSDT-USBX并添加了USBPower.kext以实现更好的USB驱动方法。
+
 - 2020-03-28：我发现更新到最新版本后，大小写灯已正常工作！
 
 ## 代办事项

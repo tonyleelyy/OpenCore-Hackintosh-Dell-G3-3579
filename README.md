@@ -8,11 +8,11 @@
 
 English | [中文](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README_CN.md)（同步更新）
 
-### Latest Release: [v1.0](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v1.0)
+### Latest Release: [v1.2](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v1.2)
 
-**macOS Version: 10.15.4**
+**macOS Version: 10.15.4 19E287**
 
-**OpenCore Version: 0.5.7**
+**OpenCore Version: [0.5.7 Offical](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.7)**
 
 Origin: [CerteKim](https://github.com/CerteKim)'s [Dell-G3-3579-Hackintosh-OpenCore](https://github.com/CerteKim/Dell-G3-3579-Hackintosh-OpenCore) (Huge Thanks!)
 
@@ -22,7 +22,16 @@ I made it work for my i5-8300H, GTX1050, no USB Type-C version of Dell G3 3579.
 > I will try to update this project as fast as possible, which means it will be adapted to the latest version of OpenCore and macOS
 
 ## Update
+- 2020-04-11: 
+
+  Updated to MacOS 10.15.4 19E287. Changed OpenCore to offical release 0.5.7 ver. and fix the structure of Config.plist.
+
+  Updated Lilu, VirtualSMC, AppleALC, WhateverGreen, SMCBatteryManager, NVMeFix.
+
+  Customized and updated IntelBluetoothFirmware, now the size is much smaller. Updated IntelBluetoothInjector.
+
 - 2020-03-31: Deleted SSDT-USBX and added USBPower.kext.
+
 - 2020-03-28: I found that the Caps Lock light work perfectly after the lastest update!
 
 ## To-Do

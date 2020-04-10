@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19A602</string>
+	<string>19E287</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -17,27 +17,27 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>1.0.3</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.0.2</string>
+	<string>1.0.3</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>11A1027</string>
+	<string>11E146</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>19A547</string>
+	<string>19E258</string>
 	<key>DTSDKName</key>
 	<string>macosx10.15</string>
 	<key>DTXcode</key>
-	<string>1110</string>
+	<string>1140</string>
 	<key>DTXcodeBuild</key>
-	<string>11A1027</string>
+	<string>11E146</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>IntelBluetoothFirmware_ 0026</key>
@@ -167,22 +167,14 @@
 	<string>Copyright © 2019 钟先耀. All rights reserved.</string>
 	<key>OSBundleLibraries</key>
 	<dict>
-		<key>com.apple.iokit.IOACPIFamily</key>
-		<string>1.0</string>
-		<key>com.apple.iokit.IOBluetoothFamily</key>
-		<string>1.0</string>
 		<key>com.apple.iokit.IOUSBHostFamily</key>
-		<string>1.0</string>
-		<key>com.apple.kpi.bsd</key>
-		<string>8.0</string>
+		<string>1.2</string>
 		<key>com.apple.kpi.iokit</key>
-		<string>8.0</string>
+		<string>16.7</string>
 		<key>com.apple.kpi.libkern</key>
-		<string>8.0</string>
+		<string>16.7</string>
 		<key>com.apple.kpi.mach</key>
-		<string>8.0</string>
-		<key>com.apple.kpi.unsupported</key>
-		<string>8.0</string>
+		<string>16.7</string>
 	</dict>
 </dict>
 </plist>
