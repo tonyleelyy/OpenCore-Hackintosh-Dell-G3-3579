@@ -1,7 +1,7 @@
 # OpenCore Hackintosh for Dell G3 3579
 
 [![macOS](https://img.shields.io/badge/macOS-10.15.4-orange)](https://www.apple.com/macos/catalina/)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.5.7-9cf)](https://github.com/williambj1/OpenCore-Factory/)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.5.7-9cf)](https://github.com/acidanthera/OpenCorePkg)
 [![license](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 <img align="right" src="https://support.apple.com/content/dam/edam/applecare/images/en_US/macos/psp-mini-hero-macos-high-sierra-whats-new_2x.png" alt="Critter" width="250">
@@ -24,11 +24,11 @@
 ## 更新
 - 2020-04-11：
 
-  更新至 MacOS 10.15.4 19E287。更新 OpenCore 到官方Release 0.5.7 版本并完善了Config.plist的结构
+  更新至 MacOS 10.15.4 19E287。更新 OpenCore 到官方Release 0.5.7 版本并完善了Config.plist的结构。
 
-  更新 Lilu, VirtualSMC, AppleALC, WhateverGreen, SMCBatteryManager, NVMeFix.
+  更新 Lilu, VirtualSMC, AppleALC, WhateverGreen, SMCBatteryManager, NVMeFix。
 
-  更新并定制了 IntelBluetoothFirmware, 驱动文件大幅缩小。同时更新了 IntelBluetoothInjector.
+  更新并定制了 IntelBluetoothFirmware，驱动文件大幅缩小。同时更新了 IntelBluetoothInjector。
 
 - 2020-03-31：删除了SSDT-USBX并添加了USBPower.kext以实现更好的USB驱动方法。
 

@@ -1,7 +1,7 @@
 # OpenCore Hackintosh for Dell G3 3579
 
 [![macOS](https://img.shields.io/badge/macOS-10.15.4-orange)](https://www.apple.com.cn/macos/catalina/)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.5.7-9cf)](https://github.com/williambj1/OpenCore-Factory/)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.5.7-9cf)](https://github.com/acidanthera/OpenCorePkg)
 [![license](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 <img align="right" src="https://support.apple.com/content/dam/edam/applecare/images/en_US/macos/psp-mini-hero-macos-high-sierra-whats-new_2x.png" alt="Critter" width="250">
