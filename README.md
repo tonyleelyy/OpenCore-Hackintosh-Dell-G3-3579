@@ -24,6 +24,10 @@ I made it work for my i5-8300H, GTX1050, no USB Type-C version of Dell G3 3579.
 ## Update
 - 2020-04-13: 
 
+  There are some problems of the WiFi. Don't know how to fix it, please wait.
+
+- 2020-04-13: 
+
   After rebuilding my ACPI folder and fix my config.plist, Intel WiFi is FINALLY supported!!!
 
   Please check https://github.com/zxystd/itlwm and enjoy!!!
