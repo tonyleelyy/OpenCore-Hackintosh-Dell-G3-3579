@@ -8,31 +8,31 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Disable dGPU</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-Disable-DGPU.aml</string>
+				<string>SSDT-NDGP_OFF.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>XOSI</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-OC-XOSI.aml</string>
+				<string>SSDT-OCWork-dell.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>PowerManager</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-PLUG.aml</string>
+				<string>SSDT-BKeyBRT6-dell.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>GPRW</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -40,7 +40,15 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>PTSWAK</string>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-LIDpatch.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -48,47 +56,55 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>ALS0</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-ALS0.aml</string>
+				<string>SSDT-PMCR.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>LIDpatch</string>
-				<key>Disabled</key>
+				<string></string>
+				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-LIDpatch.aml</string>
+				<string>SSDT-PPMC.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SBUS</string>
-				<key>Disabled</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-MEM2.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-MCHC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-DMAC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-SBUS.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-Config</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-Config.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>RMCF</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-RMCF.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Backlight</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -96,19 +112,35 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>IGPU</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-IGPU.aml</string>
+				<string>SSDT-PLUG-_PR.PR00.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>BKey</string>
-				<key>Disabled</key>
+				<string></string>
+				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-BKeySMEE-Dell.aml</string>
+				<string>SSDT-OC-XOSI.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-ALSD.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-EC.aml</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -116,32 +148,6 @@
 		</array>
 		<key>Patch</key>
 		<array>
-			<dict>
-				<key>Comment</key>
-				<string>GPRW to XPRW</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>R1BSVwI=</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>WFBSVwI=</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
-			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>OSID to XSID</string>
@@ -196,13 +202,13 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>_DSM to XDSM</string>
+				<string>PNLF to XNLF</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>X0RTTQ==</data>
+				<data>UE5MRg==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -210,7 +216,7 @@
 				<key>OemTableId</key>
 				<data></data>
 				<key>Replace</key>
-				<data>WERTTQ==</data>
+				<data>WE5MRg==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -274,10 +280,36 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>_WAK to ZWAK(1,S)</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X1dBSwE=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>WldBSwE=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>_LID to XLID</string>
 				<key>Count</key>
 				<integer>0</integer>
-				<key>Disabled</key>
+				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>X0xJRAA=</data>
@@ -300,91 +332,13 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>ECDV to EC</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>RUNEVg==</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>RUNfXw==</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HDAS to HDEF</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>SERBUw==</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>SERFRg==</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HECI to IMEI</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>SEVDSQ==</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>SU1FSQ==</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>GFX0 to IGPU</string>
+				<string>GPRW to XPRW</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>R0ZYMA==</data>
+				<data>R1BSVwI=</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -392,7 +346,7 @@
 				<key>OemTableId</key>
 				<data></data>
 				<key>Replace</key>
-				<data>SUdQVQ==</data>
+				<data>WFBSVwI=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -404,13 +358,13 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>PEGP to GFX0</string>
+				<string>BRT6 to XRT6(dell)</string>
 				<key>Count</key>
-				<integer>1</integer>
-				<key>Disabled</key>
+				<integer>0</integer>
+				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>UEVHUA==</data>
+				<data>QlJUNgKgC5M=</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -418,33 +372,7 @@
 				<key>OemTableId</key>
 				<data></data>
 				<key>Replace</key>
-				<data>R0ZYMA==</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SMEE to XMEE</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>U01FRQE=</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>WE1FRQE=</data>
+				<data>WFJUNgKgC5M=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -571,8 +499,6 @@
 				<string>Intel UHD Graphics 630 (Mobile)</string>
 			</dict>
 		</dict>
-		<key>Block</key>
-		<dict/>
 	</dict>
 	<key>Kernel</key>
 	<dict>
@@ -1039,14 +965,14 @@
 		</array>
 		<key>Boot</key>
 		<dict>
+			<key>ConsoleAttributes</key>
+			<integer>0</integer>
 			<key>HibernateMode</key>
 			<string>None</string>
 			<key>HideAuxiliary</key>
 			<false/>
 			<key>HideSelf</key>
 			<true/>
-			<key>ConsoleAttributes</key>
-			<integer>0</integer>
 			<key>PickerAttributes</key>
 			<integer>0</integer>
 			<key>PickerAudioAssist</key>

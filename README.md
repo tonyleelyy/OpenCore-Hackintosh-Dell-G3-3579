@@ -8,7 +8,7 @@
 
 English | [中文](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README_CN.md)（同步更新）
 
-### Latest Release: [v1.2](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v1.2)
+### Latest Release: [v2.0](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.0)
 
 **macOS Version: 10.15.4 19E287**
 
@@ -22,6 +22,12 @@ I made it work for my i5-8300H, GTX1050, no USB Type-C version of Dell G3 3579.
 > I will try to update this project as fast as possible, which means it will be adapted to the latest version of OpenCore and macOS
 
 ## Update
+- 2020-04-13: 
+
+  After rebuilding my ACPI folder and fix my config.plist, Intel WiFi is FINALLY supported!!!
+
+  Please check https://github.com/zxystd/itlwm and enjoy!!!
+
 - 2020-04-11: 
 
   Updated to MacOS 10.15.4 19E287. Changed OpenCore to offical release 0.5.7 ver. and fixed the structure of Config.plist.
@@ -35,7 +41,7 @@ I made it work for my i5-8300H, GTX1050, no USB Type-C version of Dell G3 3579.
 - 2020-03-28: I found that the Caps Lock light work perfectly after the lastest update!
 
 ## To-Do
-- 2020-03-29: I'm trying to rebuild my SSDT, hope that can fix audio and add OpenCore Windows support.
+- 2020-04-13: Check audio.
 
 ## Configuration
 
@@ -50,7 +56,7 @@ I made it work for my i5-8300H, GTX1050, no USB Type-C version of Dell G3 3579.
 | dGPU | NVIDIA GeForce GTX 1050 4G | 🚫 |
 | Sound Card | Realtek ALC236 | ✅ |
 | Ethernet Card | Realtek RTL8111 | ✅ |
-| Wireless Card | Inte Wireless-AC 9462 | BT only |
+| Wireless Card | Inte Wireless-AC 9462 | ✅ |
 
 ## Working
 
@@ -63,6 +69,7 @@ I made it work for my i5-8300H, GTX1050, no USB Type-C version of Dell G3 3579.
 - Trackpad
 - WebCam
 - Bluetooth (With On/Off buttom)
+- Wi-Fi (Supported by [itlwm](https://github.com/zxystd/itlwm))
 
 ## Issue
 
@@ -73,7 +80,6 @@ I made it work for my i5-8300H, GTX1050, no USB Type-C version of Dell G3 3579.
 - dGPU (Disabled by SSDT)
 - HDMI (Directly link to dGPU, controlled by Optimus)
 - Internal SD Card Reader
-- Wi-Fi (Will be supported by [itlwm](https://github.com/zxystd/itlwm) later hopefully)
 
 ## For Installation
 

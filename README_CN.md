@@ -8,7 +8,7 @@
 
 [English](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README.md) | 中文
 
-### 最新的Release：[v1.2](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v1.2)
+### 最新的Release：[v2.0](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.0)
 
 **macOS版本：10.15.4 19E287**
 
@@ -22,6 +22,12 @@
 > 我会尽可能迅速地更新这一项目，尽量保证适配最新版本的OpenCore和macOS系统。
 
 ## 更新
+- 2020-04-13：
+
+  在重新构建ACPI目录并修改 Config.plist 之后，终于！！！可以使用英特尔WiFi了！！！
+
+  请使用 https://github.com/zxystd/itlwm 尽情网上冲浪！！！
+
 - 2020-04-11：
 
   更新至 MacOS 10.15.4 19E287。更新 OpenCore 到官方Release 0.5.7 版本并完善了Config.plist的结构。
@@ -35,7 +41,7 @@
 - 2020-03-28：我发现更新到最新版本后，大小写灯已正常工作！
 
 ## 待办事项
-- 2020-03-29：正在尝试重建SSDT，看看能否修复音频和使得Windows在OpenCore进入可用。
+- 2020-04-13：检查音频问题。
 
 ## 电脑配置
 
@@ -50,7 +56,7 @@
 | 独立显卡 |  NVIDIA GeForce GTX 1050 4G   |    🚫     |
 |   声卡   |        Realtek ALC236         |    ✅     |
 | 有线网卡 |        Realtek RTL8111        |    ✅     |
-| 无线网卡 |     Inte Wireless-AC 9462     |  仅蓝牙  |
+| 无线网卡 |     Inte Wireless-AC 9462     |  ✅  |
 
 ## 工作的部分
 
@@ -63,6 +69,7 @@
 - 触摸板
 - 摄像头
 - 蓝牙（带有蓝牙开关）
+- Wi-Fi（使用[itlwm](https://github.com/zxystd/itlwm))
 
 ## 问题
 
@@ -73,7 +80,6 @@
 - 独立显卡（已使用SSDT屏蔽）
 - HDMI（使用Optimus技术，直接连接到独立显卡，故无解）
 - 内置读卡器
-- Wi-Fi（有希望在[itlwm](https://github.com/zxystd/itlwm)得到适配)
 
 ## 安装前
 
