@@ -24,6 +24,10 @@
 ## 更新
 - 2020-04-13：
 
+  WiFi可以重新工作了，使用指南请看下方。
+
+- 2020-04-13：
+
   使用WiFi的过程中出现问题，暂时不知道如何解决，请耐心等候一下。
 
 - 2020-04-13：
@@ -43,6 +47,49 @@
 - 2020-03-31：删除了SSDT-USBX并添加了USBPower.kext以实现更好的USB驱动方法。
 
 - 2020-03-28：我发现更新到最新版本后，大小写灯已正常工作！
+
+## WiFi使用指南
+
+1. 在 App Store 下载 Xcode。
+
+2. Clone [itlwm](https://github.com/zxystd/itlwm) 的 master 分支，解压缩。
+
+3. 用 Xcode 打开 itlwm.xcodeproj。
+
+4. 打开之后可能会看到一个黄色的“⚠️1”在界面的上面，点击它，"Update to recommded settings" - "Perform Changes"。
+
+5. 点击左侧的文件夹按钮，找到 "mac80211.cpp" 点击进入。
+
+6. 使用 Command + F 找到 "zxyssdt112233"。
+
+7. 把 ssid_name = "" 的 ssdt 改成你的Wi-Fi名
+
+   把 ssid_pwd = "" 的 zxyssdt112233 改成你的Wi-Fi密码
+
+   Command + S 保存
+
+8. 点击上面 "My Mac" 左边的小方块，选 "itlwm"。
+
+9. 点击播放按钮 Build。
+
+10. Build successful之后在左边找到 Products 文件夹，右键 "itlwm.kext"，"Show in Finder"。
+
+11. 复制 "itlwm.kext" 到一个你熟悉的目录。
+
+12. 先拔掉网线！（我也不知道为什么一定要这样才行）
+
+13. 用终端运行以下命令：（把下面的 "itlwm.kext" 改成文件的详细地址，如 "/Users/tony/Downloads/itlwm.kext"）
+
+```
+cp -R itlwm.kext /tmp
+sudo chown -R root:wheel /tmp/*.kext
+sudo kextutil /tmp/*.kext
+```
+
+14. 会卡一下，然后就开始享受你的Wi-Fi吧！（虽然网速会很慢）
+
+驱动作者和版权：
+https://github.com/zxystd/itlwm
 
 ## 待办事项
 - 2020-04-13：检查音频问题。
