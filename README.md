@@ -76,9 +76,11 @@ I made it work for my i5-8300H, GTX1050, no USB Type-C version of Dell G3 3579.
 
 11. Copy "itlwm.kext" to a place you knew.
 
-12. Unplug your Ethernet first!! (I don't konw why)
+12. **SHUTDOWN your computer, and boot again in OC(do not reboot from Windows)**
 
-13. Use Terminal to run these: (replace "itlwm.kext" with your file address like "/Users/tony/Downloads/itlwm.kext")
+13. **Unplug your Ethernet first!! (I don't konw why)**
+
+14. Use Terminal to run these: (replace "itlwm.kext" with your file address like "/Users/tony/Downloads/itlwm.kext")
 
 ```
 cp -R itlwm.kext /tmp

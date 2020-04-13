@@ -76,9 +76,11 @@
 
 11. 复制 "itlwm.kext" 到一个你熟悉的目录。
 
-12. 先拔掉网线！（我也不知道为什么一定要这样才行）
+12. **关机！然后再开机选择OC启动，切记不要从Windows重启，否则无法使用**
 
-13. 用终端运行以下命令：（把下面的 "itlwm.kext" 改成文件的详细地址，如 "/Users/tony/Downloads/itlwm.kext"）
+13. **先拔掉网线！（我也不知道为什么一定要这样才行）**
+
+14. 用终端运行以下命令：（把下面的 "itlwm.kext" 改成文件的详细地址，如 "/Users/tony/Downloads/itlwm.kext"）
 
 ```
 cp -R itlwm.kext /tmp
