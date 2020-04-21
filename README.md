@@ -8,7 +8,7 @@
 
 English | [中文](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README_CN.md)（同步更新）
 
-### Latest Release: [v2.0](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.0)
+### Latest Release: [v2.1](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.1)
 
 **macOS Version: 10.15.4 19E287**
 
@@ -21,6 +21,10 @@ This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C versi
 > Although the project has been completely separated from the support of [CerteKim](https://github.com/CerteKim)'s [Dell-G3-3579-Hackintosh-OpenCore](https://github.com/CerteKim/Dell-G3-3579-Hackintosh-OpenCore), but I still want to thank him. Without his support there would be no such project.
 
 ## Update
+- 2020-04-21:
+
+  Add EFI for intall in Release, which changed `ShowPicker` and `Timeout`. No other differences between these two files. No need to update if you use Release v2.0.
+
 - 2020-04-13:
 
   WiFi works again. Instruction down below.
@@ -46,6 +50,28 @@ This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C versi
 - 2020-03-31: Deleted SSDT-USBX and added USBPower.kext.
 
 - 2020-03-28: I found that the Caps Lock light work perfectly after the lastest update!
+
+## Differences between EFI.zip and EFI_Install.zip
+
+In `EFI_Install.zip` config.plist:
+
+```
+<key>ShowPicker</key>
+<true/>
+
+<key>Timeout</key>
+<integer>10</integer>
+```
+
+In `EFI.zip` config.plist:
+
+```
+<key>ShowPicker</key>
+<false/>
+
+<key>Timeout</key>
+<integer>0</integer>
+```
 
 ## WiFi Instruction
 
