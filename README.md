@@ -14,12 +14,11 @@ English | [中文](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-357
 
 **OpenCore Version: [0.5.7 Offical](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.7)**
 
-Origin: [CerteKim](https://github.com/CerteKim)'s [Dell-G3-3579-Hackintosh-OpenCore](https://github.com/CerteKim/Dell-G3-3579-Hackintosh-OpenCore) (Huge Thanks!)
-
-My version of this EFI is edited from CerteKim's Opencore Hackintosh project.
-I made it work for my i5-8300H, GTX1050, no USB Type-C version of Dell G3 3579.
+This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C version of Dell G3 3579.
 
 > I will try to update this project as fast as possible, which means it will be adapted to the latest version of OpenCore and macOS
+>
+> Although the project has been completely separated from the support of [CerteKim](https://github.com/CerteKim)'s [Dell-G3-3579-Hackintosh-OpenCore](https://github.com/CerteKim/Dell-G3-3579-Hackintosh-OpenCore), but I still want to thank him. Without his support there would be no such project.
 
 ## Update
 - 2020-04-13:
@@ -92,9 +91,6 @@ sudo kextutil /tmp/*.kext
 
 Credit:
 https://github.com/zxystd/itlwm
-
-## To-Do
-- 2020-04-13: Check audio.
 
 ## Configuration
 

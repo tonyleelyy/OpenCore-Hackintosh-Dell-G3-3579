@@ -14,12 +14,11 @@
 
 **OpenCore版本：[0.5.7 Offical](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.7)**
 
-来源: [CerteKim](https://github.com/CerteKim)的 [Dell-G3-3579-Hackintosh-OpenCore](https://github.com/CerteKim/Dell-G3-3579-Hackintosh-OpenCore) （万分感谢！）
-
-我这一版本的EFI修改自CerteKim的OpenCore黑苹果项目。
-我将它适配了我的i5-8300H，GTX1050，没有USB Type-C版本的Dell G3 3579。
+本 OpenCore 黑苹果项目适配 i5-8300H，GTX1050，没有USB Type-C版本的Dell G3 3579。
 
 > 我会尽可能迅速地更新这一项目，尽量保证适配最新版本的OpenCore和macOS系统。
+>
+> 尽管这个项目已经完全脱离了 [CerteKim](https://github.com/CerteKim) 的 [Dell-G3-3579-Hackintosh-OpenCore](https://github.com/CerteKim/Dell-G3-3579-Hackintosh-OpenCore) 项目，但我仍要感谢他。没有 CerteKim 的支持就不会有这个项目的诞生。
 
 ## 更新
 - 2020-04-13：
@@ -93,9 +92,6 @@ sudo kextutil /tmp/*.kext
 驱动作者和版权：
 https://github.com/zxystd/itlwm
 
-## 待办事项
-- 2020-04-13：检查音频问题。
-
 ## 电脑配置
 
 |   配件   |             规格              | 工作状态 |
@@ -126,7 +122,7 @@ https://github.com/zxystd/itlwm
 
 ## 问题
 
-- 音频偶尔不驱动，重启解决。
+- 音频偶尔不驱动，重启解决。属于驱动本身的问题，暂时无法修复。
 
 ## 不工作的部分
 
