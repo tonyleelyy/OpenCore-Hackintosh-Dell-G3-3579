@@ -21,6 +21,10 @@ This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C versi
 > Although the project has been completely separated from the support of [CerteKim](https://github.com/CerteKim)'s [Dell-G3-3579-Hackintosh-OpenCore](https://github.com/CerteKim/Dell-G3-3579-Hackintosh-OpenCore), but I still want to thank him. Without his support there would be no such project.
 
 ## Update
+- 2020-04-27:
+
+  CPU boost fixed. Simplified `config.plist` in `DeviceProperties`.
+
 - 2020-04-21:
 
   Add EFI for intall in Release, which changed `ShowPicker` and `Timeout`. No other differences between these two files. No need to update if you use Release v2.0.
@@ -113,7 +117,7 @@ sudo chown -R root:wheel /tmp/*.kext
 sudo kextutil /tmp/*.kext
 ```
 
-14. Enjoy your wifi~ The speed might be slow.
+14. Enjoy your wifi~
 
 Credit:
 https://github.com/zxystd/itlwm
@@ -149,20 +153,10 @@ https://github.com/zxystd/itlwm
 ## Issue
 
 - Audio lost sometimes, fixed with reboots.
+- iGPU frequency stuck in 0.35 Ghz.
 
 ## Not Working
 
 - dGPU (Disabled by SSDT)
 - HDMI (Directly link to dGPU, controlled by Optimus)
 - Internal SD Card Reader
-
-## For Installation
-
-Edit Config.plist, find
-
-```
-<key>ShowPicker</key>
-<false/>
-```
-
-Change the value to ```true```

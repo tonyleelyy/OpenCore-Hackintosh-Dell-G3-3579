@@ -21,6 +21,10 @@
 > 尽管这个项目已经完全脱离了 [CerteKim](https://github.com/CerteKim) 的 [Dell-G3-3579-Hackintosh-OpenCore](https://github.com/CerteKim/Dell-G3-3579-Hackintosh-OpenCore) 项目，但我仍要感谢他。没有 CerteKim 的支持就不会有这个项目的诞生。
 
 ## 更新
+- 2020-04-27:
+
+  CPU 变频修复（存疑），通过重写 `DeviceProperties` 精简了 `config.plist`。
+
 - 2020-04-21：
 
   在新的 Release 中添加了供安装使用的 EFI，仅改变了 `ShowPicker` 和 `Timeout` 的值，其他无变化。使用 Release v2.0 的朋友无需更新。
@@ -79,7 +83,7 @@
 
 11. 复制 "itlwm.kext" 到一个你熟悉的目录。
 
-12. **关机！然后再开机选择OC启动，切记不要从Windows重启，否则无法使用**
+12. **关机！然后再开机选择OC启动，切记不要从Windows重启，否则无法使用。**
 
 13. **先拔掉网线！（我也不知道为什么一定要这样才行）**
 
@@ -91,7 +95,7 @@ sudo chown -R root:wheel /tmp/*.kext
 sudo kextutil /tmp/*.kext
 ```
 
-14. 会卡一下，然后就开始享受你的Wi-Fi吧！（虽然网速会很慢）
+14. 开始享受你的Wi-Fi吧！
 
 驱动作者和版权：
 https://github.com/zxystd/itlwm
@@ -127,20 +131,10 @@ https://github.com/zxystd/itlwm
 ## 问题
 
 - 音频偶尔不驱动，重启解决。属于驱动本身的问题，暂时无法修复。
+- 核显频率不能满速，一直停在0.35 Ghz。
 
 ## 不工作的部分
 
 - 独立显卡（已使用SSDT屏蔽）
 - HDMI（使用Optimus技术，直接连接到独立显卡，故无解）
 - 内置读卡器
-
-## 安装前
-
-修改Config.plist，找到
-
-```
-<key>ShowPicker</key>
-<false/>
-```
-
-将值改成```true```
