@@ -74,8 +74,7 @@
 
 ## BIOS 设置
 
-| System Configuration |      |
-| -------------------- | ---- |
+| **System Configuration** |      |
 | SATA Operation       | AHCI |
 |                      |      |
 | **Secure Bootxu**   |      |

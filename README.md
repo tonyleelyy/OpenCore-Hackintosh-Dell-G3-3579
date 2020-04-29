@@ -73,8 +73,7 @@ This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C versi
 
 ## BIOS Configuration
 
-| System Configuration |      |
-| -------------------- | ---- |
+| **System Configuration** |      |
 | SATA Operation       | AHCI |
 |                      |      |
 | **Secure Bootxu**   |      |
