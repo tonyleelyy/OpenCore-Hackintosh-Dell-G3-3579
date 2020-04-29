@@ -55,6 +55,78 @@
 
 - 2020-03-28：我发现更新到最新版本后，大小写灯已正常工作！
 
+
+
+## 电脑配置
+
+|   配件   |             规格              | 工作状态 |
+| :------: | :---------------------------: | :------: |
+|   模组   |         Dell G3 3579          |    ✅     |
+|  处理器  | Intel Core i5-8300H @ 2.30Ghz |    ✅     |
+|   内存   |    8GB Micron DDR4 2666Mhz    |    ✅     |
+| 固态硬盘 |   Hikvision C2000Pro 512GB    |    ✅     |
+| 机械硬盘 |         WD10SPZX 1TB          |    ✅     |
+| 核芯显卡 |    Intel UHD Graphics 630    |    ✅     |
+| 独立显卡 |  NVIDIA GeForce GTX 1050 4G   |    🚫     |
+|   声卡   |        Realtek ALC236         |    ✅     |
+| 有线网卡 |        Realtek RTL8111        |    ✅     |
+| 无线网卡 |     Inte Wireless-AC 9462     |  ✅  |
+
+## BIOS 设置
+
+| System Configuration |      |
+| -------------------- | ---- |
+| SATA Operation       | AHCI |
+|                      |      |
+| **Secure Bootxu**   |      |
+| Secure Boot Enable   | Disabled（取消勾选） |
+|  |                    |
+| **Intel Software Guard Extensions** |                    |
+| Intel SGX Enable | Disabled           |
+|  |                    |
+| **POST Behavior** |                    |
+| Fastboot | Thorough           |
+|  |                    |
+| **Virtualization Support** |                    |
+| VT for Direct I/O | Disabled（取消勾选） |
+
+其他保持默认设置。
+
+## EFI.zip 和 EFI_Install.zip 的区别
+ `EFI_Install.zip` 的 config.plist:
+
+```
+<key>ShowPicker</key>
+<true/>
+
+<key>Timeout</key>
+<integer>10</integer>
+```
+
+ `EFI.zip` 的 config.plist:
+
+```
+<key>ShowPicker</key>
+<false/>
+
+<key>Timeout</key>
+<integer>0</integer>
+```
+
+
+## 工作的部分
+
+- macOS 10.15.4
+- CPU（睿频4.0Ghz）
+- 核芯显卡
+- 有线网卡
+- 音频（Layout=15）
+- USB（定制USBPorts.kext）
+- 触摸板
+- 摄像头
+- 蓝牙（带有蓝牙开关）
+- Wi-Fi（使用[itlwm](https://github.com/zxystd/itlwm))
+
 ## WiFi使用指南
 
 1. 在 App Store 下载 Xcode。
@@ -99,34 +171,6 @@ sudo kextutil /tmp/*.kext
 
 驱动作者和版权：
 https://github.com/zxystd/itlwm
-
-## 电脑配置
-
-|   配件   |             规格              | 工作状态 |
-| :------: | :---------------------------: | :------: |
-|   模组   |         Dell G3 3579          |    ✅     |
-|  处理器  | Intel Core i5-8300H @ 2.30Ghz |    ✅     |
-|   内存   |    8GB Micron DDR4 2666Mhz    |    ✅     |
-| 固态硬盘 |   Hikvision C2000Pro 512GB    |    ✅     |
-| 机械硬盘 |         WD10SPZX 1TB          |    ✅     |
-| 核芯显卡 |    Intel UHD Graphics 630    |    ✅     |
-| 独立显卡 |  NVIDIA GeForce GTX 1050 4G   |    🚫     |
-|   声卡   |        Realtek ALC236         |    ✅     |
-| 有线网卡 |        Realtek RTL8111        |    ✅     |
-| 无线网卡 |     Inte Wireless-AC 9462     |  ✅  |
-
-## 工作的部分
-
-- macOS 10.15.4
-- CPU（睿频4.0Ghz）
-- 核芯显卡
-- 有线网卡
-- 音频（Layout=15）
-- USB（定制USBPorts.kext）
-- 触摸板
-- 摄像头
-- 蓝牙（带有蓝牙开关）
-- Wi-Fi（使用[itlwm](https://github.com/zxystd/itlwm))
 
 ## 问题
 

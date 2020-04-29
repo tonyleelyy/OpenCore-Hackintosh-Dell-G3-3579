@@ -55,6 +55,42 @@ This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C versi
 
 - 2020-03-28: I found that the Caps Lock light work perfectly after the lastest update!
 
+
+## Configuration
+
+| Specifications | Detail | Working |
+| :------------: | :------: | :--------: |
+| Model | Dell G3 3579 | ✅ |
+| Processor | Intel Core i5-8300H @ 2.30Ghz | ✅ |
+| Memory | 8GB Micron DDR4 2666Mhz | ✅ |
+| SSD | Hikvision C2000Pro 512GB | ✅ |
+| HDD | WD10SPZX 1TB | ✅ |
+| iGPU | Intel UHD Graphics 630 | ✅ |
+| dGPU | NVIDIA GeForce GTX 1050 4G | 🚫 |
+| Sound Card | Realtek ALC236 | ✅ |
+| Ethernet Card | Realtek RTL8111 | ✅ |
+| Wireless Card | Inte Wireless-AC 9462 | ✅ |
+
+## BIOS Configuration
+
+| System Configuration |      |
+| -------------------- | ---- |
+| SATA Operation       | AHCI |
+|                      |      |
+| **Secure Bootxu**   |      |
+| Secure Boot Enable   | Disabled (Uncheck) |
+|  |                    |
+| **Intel Software Guard Extensions** |                    |
+| Intel SGX Enable | Disabled           |
+|  |                    |
+| **POST Behavior** |                    |
+| Fastboot | Thorough           |
+|  |                    |
+| **Virtualization Support** |                    |
+| VT for Direct I/O | Disabled (Uncheck) |
+
+Everything else is set default.
+
 ## Differences between EFI.zip and EFI_Install.zip
 
 In `EFI_Install.zip` config.plist:
@@ -76,6 +112,19 @@ In `EFI.zip` config.plist:
 <key>Timeout</key>
 <integer>0</integer>
 ```
+
+## Working
+
+- macOS 10.15.4
+- CPU (Boost to 4.0Ghz)
+- iGPU
+- Ethernet
+- Audio (Layout=15)
+- USB (Customed by USBPorts.kext)
+- Trackpad
+- WebCam
+- Bluetooth (With On/Off buttom)
+- Wi-Fi (Supported by [itlwm](https://github.com/zxystd/itlwm))
 
 ## WiFi Instruction
 
@@ -121,34 +170,6 @@ sudo kextutil /tmp/*.kext
 
 Credit:
 https://github.com/zxystd/itlwm
-
-## Configuration
-
-| Specifications | Detail | Working |
-| :------------: | :------: | :--------: |
-| Model | Dell G3 3579 | ✅ |
-| Processor | Intel Core i5-8300H @ 2.30Ghz | ✅ |
-| Memory | 8GB Micron DDR4 2666Mhz | ✅ |
-| SSD | Hikvision C2000Pro 512GB | ✅ |
-| HDD | WD10SPZX 1TB | ✅ |
-| iGPU | Intel UHD Graphics 630 | ✅ |
-| dGPU | NVIDIA GeForce GTX 1050 4G | 🚫 |
-| Sound Card | Realtek ALC236 | ✅ |
-| Ethernet Card | Realtek RTL8111 | ✅ |
-| Wireless Card | Inte Wireless-AC 9462 | ✅ |
-
-## Working
-
-- macOS 10.15.4
-- CPU (Boost to 4.0Ghz)
-- iGPU
-- Ethernet
-- Audio (Layout=15)
-- USB (Customed by USBPorts.kext)
-- Trackpad
-- WebCam
-- Bluetooth (With On/Off buttom)
-- Wi-Fi (Supported by [itlwm](https://github.com/zxystd/itlwm))
 
 ## Issue
 
