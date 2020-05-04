@@ -1,18 +1,18 @@
 # OpenCore Hackintosh for Dell G3 3579
 
 [![macOS](https://img.shields.io/badge/macOS-10.15.4-orange)](https://www.apple.com/macos/catalina/)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.5.7-9cf)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.5.8-9cf)](https://github.com/acidanthera/OpenCorePkg)
 [![license](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 <img align="right" src="https://support.apple.com/content/dam/edam/applecare/images/en_US/macos/psp-mini-hero-macos-high-sierra-whats-new_2x.png" alt="Critter" width="250">
 
 [English](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README.md) | 中文
 
-### 最新的Release：[v2.1](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.1)
+### 最新的Release：[v2.2](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.2)
 
 **macOS版本：10.15.4 19E287**
 
-**OpenCore版本：[0.5.7 Offical](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.7)**
+**OpenCore版本：[0.5.8 Offical](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.8)**
 
 本 OpenCore 黑苹果项目适配 i5-8300H，GTX1050，没有USB Type-C版本的Dell G3 3579。
 
@@ -21,9 +21,17 @@
 > 尽管这个项目已经完全脱离了 [CerteKim](https://github.com/CerteKim) 的 [Dell-G3-3579-Hackintosh-OpenCore](https://github.com/CerteKim/Dell-G3-3579-Hackintosh-OpenCore) 项目，但我仍要感谢他。没有 CerteKim 的支持就不会有这个项目的诞生。
 
 ## 更新
+- 2020-05-04:
+
+  OpenCore 0.5.8 更新。所有驱动更新到最新版本。
+
+  继续精简 config.plist，OC 更新移除 ApfsDriverLoader.efi。
+
+  音频修复（貌似不会偶尔没声音了）。核显频率恢复正常。大小写灯恢复正常。
+
 - 2020-04-27:
 
-  CPU 变频修复（存疑），通过重写 `DeviceProperties` 精简了 `config.plist`。
+  CPU 变频修复，通过重写 `DeviceProperties` 精简了 `config.plist`。
 
 - 2020-04-21：
 
@@ -171,11 +179,6 @@ sudo kextutil /tmp/*.kext
 
 驱动作者和版权：
 https://github.com/zxystd/itlwm
-
-## 问题
-
-- 音频偶尔不驱动，重启解决。属于驱动本身的问题，暂时无法修复。
-- 核显频率不能满速，一直停在0.35 Ghz。
 
 ## 不工作的部分
 

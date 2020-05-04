@@ -1,18 +1,18 @@
 # OpenCore Hackintosh for Dell G3 3579
 
 [![macOS](https://img.shields.io/badge/macOS-10.15.4-orange)](https://www.apple.com.cn/macos/catalina/)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.5.7-9cf)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.5.8-9cf)](https://github.com/acidanthera/OpenCorePkg)
 [![license](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 <img align="right" src="https://support.apple.com/content/dam/edam/applecare/images/en_US/macos/psp-mini-hero-macos-high-sierra-whats-new_2x.png" alt="Critter" width="250">
 
 English | [中文](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README_CN.md)（同步更新）
 
-### Latest Release: [v2.1](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.1)
+### Latest Release: [v2.2](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.2)
 
 **macOS Version: 10.15.4 19E287**
 
-**OpenCore Version: [0.5.7 Offical](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.7)**
+**OpenCore Version: [0.5.8 Offical](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.8)**
 
 This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C version of Dell G3 3579.
 
@@ -20,7 +20,15 @@ This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C versi
 >
 > Although the project has been completely separated from the support of [CerteKim](https://github.com/CerteKim)'s [Dell-G3-3579-Hackintosh-OpenCore](https://github.com/CerteKim/Dell-G3-3579-Hackintosh-OpenCore), but I still want to thank him. Without his support there would be no such project.
 
-## Update
+## Updates
+- 2020-05-04:
+
+  OpenCore 0.5.8 Upadted. All kexts are up to date.
+
+  Simplified config.plist. Remove ApfsDriverLoader.efi.
+
+  Audio fix. iGPU frequence is now normal. Caps Lock light works again.
+
 - 2020-04-27:
 
   CPU boost fixed. Simplified `config.plist` in `DeviceProperties`.
@@ -171,13 +179,8 @@ sudo kextutil /tmp/*.kext
 Credit:
 https://github.com/zxystd/itlwm
 
-## Issue
-
-- Audio lost sometimes, fixed with reboots.
-- iGPU frequency stuck in 0.35 Ghz.
-
 ## Not Working
 
 - dGPU (Disabled by SSDT)
-- HDMI (Directly link to dGPU, controlled by Optimus)
+- HDMI (Directly link to dGPU)
 - Internal SD Card Reader
