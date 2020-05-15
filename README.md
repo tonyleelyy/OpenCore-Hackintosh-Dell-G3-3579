@@ -8,7 +8,7 @@
 
 English | [中文](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README_CN.md)（同步更新）
 
-### Latest Release: [v2.2](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.2)
+### Latest Release: [v2.3](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.3)
 
 **macOS Version: 10.15.4 19E287**
 
@@ -21,6 +21,10 @@ This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C versi
 > Although the project has been completely separated from the support of [CerteKim](https://github.com/CerteKim)'s [Dell-G3-3579-Hackintosh-OpenCore](https://github.com/CerteKim/Dell-G3-3579-Hackintosh-OpenCore), but I still want to thank him. Without his support there would be no such project.
 
 ## Updates
+- 2020-05-15:
+
+  Fixed trackpad issue.
+
 - 2020-05-04:
 
   OpenCore 0.5.8 Upadted. All kexts are up to date.

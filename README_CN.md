@@ -8,7 +8,7 @@
 
 [English](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README.md) | 中文
 
-### 最新的Release：[v2.2](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.2)
+### 最新的Release：[v2.3](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.3)
 
 **macOS版本：10.15.4 19E287**
 
@@ -21,6 +21,10 @@
 > 尽管这个项目已经完全脱离了 [CerteKim](https://github.com/CerteKim) 的 [Dell-G3-3579-Hackintosh-OpenCore](https://github.com/CerteKim/Dell-G3-3579-Hackintosh-OpenCore) 项目，但我仍要感谢他。没有 CerteKim 的支持就不会有这个项目的诞生。
 
 ## 更新
+- 2020-05-15：
+
+  修复了触控板无法使用的问题。
+
 - 2020-05-04:
 
   OpenCore 0.5.8 更新。所有驱动更新到最新版本。
