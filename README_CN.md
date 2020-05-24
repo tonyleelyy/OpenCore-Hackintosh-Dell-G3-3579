@@ -8,19 +8,23 @@
 
 [English](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README.md) | 中文
 
-### 最新的Release：[v2.3](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.3)
+### 最新的Release：[v2.4](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.4)
 
 **macOS版本：10.15.4 19E287**
 
-**OpenCore版本：[0.5.8 Offical](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.8)**
+**OpenCore版本：[0.5.8 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.8)**
 
 本 OpenCore 黑苹果项目适配 i5-8300H，GTX1050，没有USB Type-C版本的Dell G3 3579。
 
 > 我会尽可能迅速地更新这一项目，尽量保证适配最新版本的OpenCore和macOS系统。
 >
-> 尽管这个项目已经完全脱离了 [CerteKim](https://github.com/CerteKim) 的 [Dell-G3-3579-Hackintosh-OpenCore](https://github.com/CerteKim/Dell-G3-3579-Hackintosh-OpenCore) 项目，但我仍要感谢他。没有 CerteKim 的支持就不会有这个项目的诞生。
+> 没有 [CerteKim](https://github.com/CerteKim) 的支持就不会有这个项目的诞生，感谢。
 
 ## 更新
+- 2020-05-24：
+
+  添加了 /Boot 文件夹，请尽量使用 BOOTx64.efi 来引导。更新了 WiFi 驱动教程。
+
 - 2020-05-15：
 
   修复了触控板无法使用的问题。
@@ -102,6 +106,8 @@
 | **Virtualization Support** |                    |
 | VT for Direct I/O | Disabled（取消勾选） |
 
+请更新 BIOS 至最新版本！
+
 其他保持默认设置。
 
 ## EFI.zip 和 EFI_Install.zip 的区别
@@ -137,55 +143,10 @@
 - 触摸板
 - 摄像头
 - 蓝牙（带有蓝牙开关）
-- Wi-Fi（使用[itlwm](https://github.com/zxystd/itlwm))
-
-## WiFi使用指南
-
-1. 在 App Store 下载 Xcode。
-
-2. Clone [itlwm](https://github.com/zxystd/itlwm) 的 master 分支，解压缩。
-
-3. 用 Xcode 打开 itlwm.xcodeproj。
-
-4. 打开之后可能会看到一个黄色的“⚠️1”在界面的上面，点击它，"Update to recommded settings" - "Perform Changes"。
-
-5. 点击左侧的文件夹按钮，找到 "mac80211.cpp" 点击进入。
-
-6. 使用 Command + F 找到 "zxyssdt112233"。
-
-7. 把 ssid_name = "" 的 ssdt 改成你的Wi-Fi名
-
-   把 ssid_pwd = "" 的 zxyssdt112233 改成你的Wi-Fi密码
-
-   Command + S 保存
-
-8. 点击上面 "My Mac" 左边的小方块，选 "itlwm"。
-
-9. 点击播放按钮 Build。
-
-10. Build successful之后在左边找到 Products 文件夹，右键 "itlwm.kext"，"Show in Finder"。
-
-11. 复制 "itlwm.kext" 到一个你熟悉的目录。
-
-12. **关机！然后再开机选择OC启动，切记不要从Windows重启，否则无法使用。**
-
-13. **先拔掉网线！（我也不知道为什么一定要这样才行）**
-
-14. 用终端运行以下命令：（把下面的 "itlwm.kext" 改成文件的详细地址，如 "/Users/tony/Downloads/itlwm.kext"）
-
-```
-cp -R itlwm.kext /tmp
-sudo chown -R root:wheel /tmp/*.kext
-sudo kextutil /tmp/*.kext
-```
-
-14. 开始享受你的Wi-Fi吧！
-
-驱动作者和版权：
-https://github.com/zxystd/itlwm
+- Wi-Fi（使用[itlwm](https://github.com/zxystd/itlwm) [教程](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1856461) 或 [IntelWiFi](http://bbs.pcbeta.com/viewthread-1856465-1-2.html))
 
 ## 不工作的部分
 
 - 独立显卡（已使用SSDT屏蔽）
-- HDMI（使用Optimus技术，直接连接到独立显卡，故无解）
+- HDMI（直接连接到独立显卡，故无解）
 - 内置读卡器

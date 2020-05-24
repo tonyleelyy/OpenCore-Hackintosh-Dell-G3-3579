@@ -8,19 +8,23 @@
 
 English | [中文](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README_CN.md)（同步更新）
 
-### Latest Release: [v2.3](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.3)
+### Latest Release: [v2.4](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.4)
 
 **macOS Version: 10.15.4 19E287**
 
-**OpenCore Version: [0.5.8 Offical](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.8)**
+**OpenCore Version: [0.5.8 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.8)**
 
 This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C version of Dell G3 3579.
 
 > I will try to update this project as fast as possible, which means it will be adapted to the latest version of OpenCore and macOS
 >
-> Although the project has been completely separated from the support of [CerteKim](https://github.com/CerteKim)'s [Dell-G3-3579-Hackintosh-OpenCore](https://github.com/CerteKim/Dell-G3-3579-Hackintosh-OpenCore), but I still want to thank him. Without his support there would be no such project.
+> Without [CerteKim](https://github.com/CerteKim)'s support there would be no such project.
 
 ## Updates
+- 2020-05-24:
+
+  Add /Boot folder. WiFi guide updated.
+
 - 2020-05-15:
 
   Fixed trackpad issue.
@@ -101,6 +105,8 @@ This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C versi
 | **Virtualization Support** |                    |
 | VT for Direct I/O | Disabled (Uncheck) |
 
+Please update BIOS to the newest version.
+
 Everything else is set default.
 
 ## Differences between EFI.zip and EFI_Install.zip
@@ -136,52 +142,7 @@ In `EFI.zip` config.plist:
 - Trackpad
 - WebCam
 - Bluetooth (With On/Off buttom)
-- Wi-Fi (Supported by [itlwm](https://github.com/zxystd/itlwm))
-
-## WiFi Instruction
-
-1. Download Xcode via App Store.
-
-2. Clone master in [itlwm](https://github.com/zxystd/itlwm), unzip.
-
-3. Open itlwm.xcodeproj in Xcode.
-
-4. You may find a yellow "⚠️1" icon at the top of Xcode's interface, click it - "Update to recommded settings" - "Perform Changes".
-
-5. Return to "File" on the left, find "mac80211.cpp".
-
-6. Use Command + F to find "zxyssdt112233".
-
-7. Change your WiFi name in ssid_name = "" 
-
-   And password in ssid_pwd = ""
-
-   Use Command + S to save your changes.
-
-8. Click the little block next to "My Mac" and choose "itlwm".
-
-9. Press the Play button to build.
-
-10. Find "Products" folder on the left and right click "itlwm.kext", "Show in Finder".
-
-11. Copy "itlwm.kext" to a place you knew.
-
-12. **SHUTDOWN your computer, and boot again in OC(do not reboot from Windows)**
-
-13. **Unplug your Ethernet first!! (I don't konw why)**
-
-14. Use Terminal to run these: (replace "itlwm.kext" with your file address like "/Users/tony/Downloads/itlwm.kext")
-
-```
-cp -R itlwm.kext /tmp
-sudo chown -R root:wheel /tmp/*.kext
-sudo kextutil /tmp/*.kext
-```
-
-14. Enjoy your wifi~
-
-Credit:
-https://github.com/zxystd/itlwm
+- Wi-Fi (Supported by [itlwm](https://github.com/zxystd/itlwm)([Guide](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1856461)) and [IntelWifi](http://bbs.pcbeta.com/viewthread-1856465-1-2.html))
 
 ## Not Working
 
