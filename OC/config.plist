@@ -116,7 +116,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-PLUG-_PR.PR00.aml</string>
+				<string>SSDT-PLUG-_SB.PR00.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -870,7 +870,7 @@
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
-			<false/>
+			<true/>
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>

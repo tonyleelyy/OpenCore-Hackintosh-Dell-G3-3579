@@ -8,7 +8,7 @@
 
 [English](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README.md) | 中文
 
-### 最新的Release：[v2.4](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.4)
+### 最新的Release：[v2.5](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.5)
 
 **macOS版本：10.15.4 19E287**
 
@@ -19,8 +19,14 @@
 > 我会尽可能迅速地更新这一项目，尽量保证适配最新版本的OpenCore和macOS系统。
 >
 > 没有 [CerteKim](https://github.com/CerteKim) 的支持就不会有这个项目的诞生，感谢。
+>
+> [vv-byte](https://github.com/vv-byte) 协助解决了节能五项的问题，感谢。
 
 ## 更新
+- 2020-05-27：
+
+  修复了节能五项（笔记本只有四项），优化了禁用独显的SSDT。（[vv-byte](https://github.com/vv-byte) 协助了此次更新，感谢）
+
 - 2020-05-24：
 
   添加了 /Boot 文件夹，请尽量使用 BOOTx64.efi 来引导。更新了 WiFi 驱动教程。
