@@ -1,18 +1,18 @@
 # OpenCore Hackintosh for Dell G3 3579
 
-[![macOS](https://img.shields.io/badge/macOS-10.15.4-orange)](https://www.apple.com/macos/catalina/)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.5.8-9cf)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS](https://img.shields.io/badge/macOS-10.15.5-orange)](https://www.apple.com/macos/catalina/)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.5.9-9cf)](https://github.com/acidanthera/OpenCorePkg)
 [![license](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 <img align="right" src="https://support.apple.com/content/dam/edam/applecare/images/en_US/macos/psp-mini-hero-macos-high-sierra-whats-new_2x.png" alt="Critter" width="250">
 
 [English](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README.md) | 中文
 
-### 最新的Release：[v2.5](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.5)
+### 最新的Release：[v3.0](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v3.0)
 
-**macOS版本：10.15.4 19E287**
+**macOS版本：10.15.5 19F101**
 
-**OpenCore版本：[0.5.8 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.8)**
+**OpenCore版本：[0.5.9 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.9)**
 
 本 OpenCore 黑苹果项目适配 i5-8300H，GTX1050，没有USB Type-C版本的Dell G3 3579。
 
@@ -23,6 +23,14 @@
 > [vv-byte](https://github.com/vv-byte) 协助解决了节能五项的问题，感谢。
 
 ## 更新
+- 2020-06-02：
+
+  更新至 OpenCore 0.5.9，顺带更新驱动，开始进入慢速更新状态。
+
+  支持 macOS 10.15.5
+
+  添加了 itlwm.kext 以驱动WiFi，请在 /OC/Kexts/itlwm.kext/Contents/Info.plist 里添加自己的WiFi信息。
+
 - 2020-05-27：
 
   修复了节能五项（笔记本只有四项），优化了禁用独显的SSDT。（[vv-byte](https://github.com/vv-byte) 协助了此次更新，感谢）
@@ -116,31 +124,9 @@
 
 其他保持默认设置。
 
-## EFI.zip 和 EFI_Install.zip 的区别
- `EFI_Install.zip` 的 config.plist:
-
-```
-<key>ShowPicker</key>
-<true/>
-
-<key>Timeout</key>
-<integer>10</integer>
-```
-
- `EFI.zip` 的 config.plist:
-
-```
-<key>ShowPicker</key>
-<false/>
-
-<key>Timeout</key>
-<integer>0</integer>
-```
-
-
 ## 工作的部分
 
-- macOS 10.15.4
+- macOS 10.15.5
 - CPU（睿频4.0Ghz）
 - 核芯显卡
 - 有线网卡
@@ -149,7 +135,7 @@
 - 触摸板
 - 摄像头
 - 蓝牙（带有蓝牙开关）
-- Wi-Fi（使用[itlwm](https://github.com/zxystd/itlwm) [教程](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1856461) 或 [IntelWiFi](http://bbs.pcbeta.com/viewthread-1856465-1-2.html))
+- Wi-Fi（使用[itlwm](https://github.com/zxystd/itlwm))
 
 ## 不工作的部分
 

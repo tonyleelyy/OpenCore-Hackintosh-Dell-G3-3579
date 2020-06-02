@@ -1,18 +1,18 @@
 # OpenCore Hackintosh for Dell G3 3579
 
-[![macOS](https://img.shields.io/badge/macOS-10.15.4-orange)](https://www.apple.com.cn/macos/catalina/)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.5.8-9cf)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS](https://img.shields.io/badge/macOS-10.15.5-orange)](https://www.apple.com.cn/macos/catalina/)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.5.9-9cf)](https://github.com/acidanthera/OpenCorePkg)
 [![license](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 <img align="right" src="https://support.apple.com/content/dam/edam/applecare/images/en_US/macos/psp-mini-hero-macos-high-sierra-whats-new_2x.png" alt="Critter" width="250">
 
 English | [中文](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README_CN.md)（同步更新）
 
-### Latest Release: [v2.5](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v2.5)
+### Latest Release: [v3.0](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v3.0)
 
-**macOS Version: 10.15.4 19E287** 
+**macOS Version: 10.15.5 19F101**
 
-**OpenCore Version: [0.5.8 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.8)**
+**OpenCore Version: [0.5.9 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.9)**
 
 This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C version of Dell G3 3579.
 
@@ -23,6 +23,14 @@ This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C versi
 > [vv-byte](https://github.com/vv-byte) helped solve the battery management problem, thanks!
 
 ## Updates
+- 2020-06-02:
+
+  Updated OpenCore 0.5.9. All kexts are up to date.
+
+  Supprot macOS 10.15.5.
+
+  Add itlwm.kext, edit your WiFi info in /OC/Kexts/itlwm.kext/Contents/Info.plist.
+
 - 2020-05-27:
 
   Fixed battery management. Optimized dGPU blocking SSDT. (Helped by [vv-byte](https://github.com/vv-byte), thanks!)
@@ -115,31 +123,9 @@ Please update BIOS to the newest version.
 
 Everything else is set default.
 
-## Differences between EFI.zip and EFI_Install.zip
-
-In `EFI_Install.zip` config.plist:
-
-```
-<key>ShowPicker</key>
-<true/>
-
-<key>Timeout</key>
-<integer>10</integer>
-```
-
-In `EFI.zip` config.plist:
-
-```
-<key>ShowPicker</key>
-<false/>
-
-<key>Timeout</key>
-<integer>0</integer>
-```
-
 ## Working
 
-- macOS 10.15.4
+- macOS 10.15.5
 - CPU (Boost to 4.0Ghz)
 - iGPU
 - Ethernet
@@ -148,7 +134,7 @@ In `EFI.zip` config.plist:
 - Trackpad
 - WebCam
 - Bluetooth (With On/Off buttom)
-- Wi-Fi (Supported by [itlwm](https://github.com/zxystd/itlwm)([Guide](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1856461)) and [IntelWifi](http://bbs.pcbeta.com/viewthread-1856465-1-2.html))
+- Wi-Fi (Supported by [itlwm](https://github.com/zxystd/itlwm))
 
 ## Not Working
 
