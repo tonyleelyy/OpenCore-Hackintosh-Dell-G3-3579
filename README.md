@@ -8,7 +8,7 @@
 
 English | [中文](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README_CN.md)（同步更新）
 
-### Latest Release: [v3.0](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v3.0)
+### Latest Release: [v3.1](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v3.1)
 
 **macOS Version: 10.15.5 19F101**
 
@@ -21,8 +21,16 @@ This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C versi
 > Without [CerteKim](https://github.com/CerteKim)'s support there would be no such project.
 >
 > [vv-byte](https://github.com/vv-byte) helped solve the battery management problem, thanks!
+>
+> [CalvinXu](https://github.com/CalvinXu17) helped add Windows boot support, thanks!
 
 ## Updates
+- 2020-06-26:
+
+  Updated VoodooI2C, itlwm
+
+  Add Windows boot support in OC (Thanks [CalvinXu](https://github.com/CalvinXu17))
+
 - 2020-06-02:
 
   Updated OpenCore 0.5.9. All kexts are up to date.

@@ -8,7 +8,7 @@
 
 [English](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README.md) | 中文
 
-### 最新的Release：[v3.0](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v3.0)
+### 最新的Release：[v3.1](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v3.1)
 
 **macOS版本：10.15.5 19F101**
 
@@ -21,8 +21,16 @@
 > 没有 [CerteKim](https://github.com/CerteKim) 的支持就不会有这个项目的诞生，感谢。
 >
 > [vv-byte](https://github.com/vv-byte) 协助解决了节能五项的问题，感谢。
+>
+> [CalvinXu](https://github.com/CalvinXu17) 提供了 OC 启动 Windows 的方法，感谢。
 
 ## 更新
+- 2020-06-26：
+
+  更新了 VoodooI2C 和 itlwm
+
+  增加了 OC 启动 Windows 支持（感谢 [CalvinXu](https://github.com/CalvinXu17)）
+
 - 2020-06-02：
 
   更新至 OpenCore 0.5.9，顺带更新驱动，开始进入慢速更新状态。
@@ -140,5 +148,5 @@
 ## 不工作的部分
 
 - 独立显卡（已使用SSDT屏蔽）
-- HDMI（直接连接到独立显卡，故无解）
+- HDMI（直接连接到独立显卡）
 - 内置读卡器
