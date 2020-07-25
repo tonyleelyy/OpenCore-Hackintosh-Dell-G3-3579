@@ -1,6 +1,6 @@
 # OpenCore Hackintosh for Dell G3 3579
 
-[![macOS](https://img.shields.io/badge/macOS-10.15.5-orange)](https://www.apple.com/macos/catalina/)
+[![macOS](https://img.shields.io/badge/macOS-10.15.6-orange)](https://www.apple.com/macos/catalina/)
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.5.9-9cf)](https://github.com/acidanthera/OpenCorePkg)
 [![license](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
@@ -8,9 +8,9 @@
 
 [English](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README.md) | 中文
 
-### 最新的Release：[v3.1](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v3.1)
+### 最新的Release：[v3.2](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v3.2)
 
-**macOS版本：10.15.5 19F101**
+**macOS版本：10.15.6**
 
 **OpenCore版本：[0.5.9 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.9)**
 
@@ -25,6 +25,12 @@
 > [CalvinXu](https://github.com/CalvinXu17) 提供了 OC 启动 Windows 的方法，感谢。
 
 ## 更新
+- 2020-07-25：
+
+  为使用 DW1820A 的朋友重新定制了USBPorts。更新了 IntelBluetooth，NoTouchID。
+
+  在 OC 0.6.0 和 Big Sur 正式版出来之前可能都不会有大更新了，能完善的都已经完善了~
+
 - 2020-06-26：
 
   更新了 VoodooI2C 和 itlwm
@@ -134,7 +140,7 @@
 
 ## 工作的部分
 
-- macOS 10.15.5
+- macOS 10.15.6
 - CPU（睿频4.0Ghz）
 - 核芯显卡
 - 有线网卡

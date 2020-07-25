@@ -1,6 +1,6 @@
 # OpenCore Hackintosh for Dell G3 3579
 
-[![macOS](https://img.shields.io/badge/macOS-10.15.5-orange)](https://www.apple.com.cn/macos/catalina/)
+[![macOS](https://img.shields.io/badge/macOS-10.15.6-orange)](https://www.apple.com.cn/macos/catalina/)
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.5.9-9cf)](https://github.com/acidanthera/OpenCorePkg)
 [![license](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
@@ -8,9 +8,9 @@
 
 English | [中文](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README_CN.md)（同步更新）
 
-### Latest Release: [v3.1](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v3.1)
+### Latest Release: [v3.2](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v3.2)
 
-**macOS Version: 10.15.5 19F101**
+**macOS Version: 10.15.6**
 
 **OpenCore Version: [0.5.9 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.9)**
 
@@ -25,6 +25,12 @@ This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C versi
 > [CalvinXu](https://github.com/CalvinXu17) helped add Windows boot support, thanks!
 
 ## Updates
+- 2020-07-25:
+
+  Fixed USBPorts.kext for DW1820A. Updated IntelBluetooth, NoTouchID.
+
+  Still waiting for OC 0.6.0...
+
 - 2020-06-26:
 
   Updated VoodooI2C, itlwm
@@ -133,7 +139,7 @@ Everything else is set default.
 
 ## Working
 
-- macOS 10.15.5
+- macOS 10.15.6
 - CPU (Boost to 4.0Ghz)
 - iGPU
 - Ethernet

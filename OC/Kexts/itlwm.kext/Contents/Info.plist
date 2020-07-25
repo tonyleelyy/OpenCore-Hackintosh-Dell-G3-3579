@@ -61,14 +61,14 @@
 				<key>WiFi_1</key>
 				<dict>
 					<key>password</key>
-					<string>zxyssdt112233</string>
+					<string>sdjianw44664466</string>
 					<key>ssid</key>
-					<string>ssdt</string>
+					<string>sdjianw_bridge_5G</string>
 				</dict>
 				<key>WiFi_2</key>
 				<dict>
 					<key>password</key>
-					<string>zxyssdt112233</string>
+					<string></string>
 					<key>ssid</key>
 					<string>ssdt_5G</string>
 				</dict>
@@ -82,7 +82,7 @@
 				<key>WiFi_4</key>
 				<dict>
 					<key>password</key>
-					<string>9utc5c5f</string>
+					<string></string>
 					<key>ssid</key>
 					<string>CMCC-KtG6</string>
 				</dict>
