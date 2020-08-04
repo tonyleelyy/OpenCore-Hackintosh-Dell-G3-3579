@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19A602</string>
+	<string>19G73</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -17,17 +17,17 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.0</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>1.0.0</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>11A1027</string>
+	<string>11E608c</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
@@ -35,9 +35,9 @@
 	<key>DTSDKName</key>
 	<string>macosx10.12</string>
 	<key>DTXcode</key>
-	<string>1110</string>
+	<string>1150</string>
 	<key>DTXcodeBuild</key>
-	<string>11A1027</string>
+	<string>11E608c</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>itlwm</key>
@@ -61,14 +61,14 @@
 				<key>WiFi_1</key>
 				<dict>
 					<key>password</key>
-					<string>sdjianw44664466</string>
+					<string>zxyssdt112233</string>
 					<key>ssid</key>
-					<string>sdjianw_bridge_5G</string>
+					<string>ssdt</string>
 				</dict>
 				<key>WiFi_2</key>
 				<dict>
 					<key>password</key>
-					<string></string>
+					<string>zxyssdt112233</string>
 					<key>ssid</key>
 					<string>ssdt_5G</string>
 				</dict>
@@ -82,7 +82,7 @@
 				<key>WiFi_4</key>
 				<dict>
 					<key>password</key>
-					<string></string>
+					<string>9utc5c5f</string>
 					<key>ssid</key>
 					<string>CMCC-KtG6</string>
 				</dict>
@@ -110,5 +110,7 @@
 	</dict>
 	<key>OSBundleRequired</key>
 	<string>Network-Root</string>
+	<key>XCBUILD</key>
+	<string>1.0.0</string>
 </dict>
 </plist>

@@ -1,18 +1,18 @@
 # OpenCore Hackintosh for Dell G3 3579
 
 [![macOS](https://img.shields.io/badge/macOS-10.15.6-orange)](https://www.apple.com.cn/macos/catalina/)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.5.9-9cf)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-9cf)](https://github.com/acidanthera/OpenCorePkg)
 [![license](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 <img align="right" src="https://support.apple.com/content/dam/edam/applecare/images/en_US/macos/psp-mini-hero-macos-high-sierra-whats-new_2x.png" alt="Critter" width="250">
 
 English | [中文](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README_CN.md)（同步更新）
 
-### Latest Release: [v3.2](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v3.2)
+### Latest Release: [v4.0](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v4.0)
 
 **macOS Version: 10.15.6**
 
-**OpenCore Version: [0.5.9 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.9)**
+**OpenCore Version: [0.6.0 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.0)**
 
 This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C version of Dell G3 3579.
 
@@ -25,80 +25,104 @@ This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C versi
 > [CalvinXu](https://github.com/CalvinXu17) helped add Windows boot support, thanks!
 
 ## Updates
-- 2020-07-25:
+- 2020-08-04
 
-  Fixed USBPorts.kext for DW1820A. Updated IntelBluetooth, NoTouchID.
+  Updated OC 0.6.0 Official. All kexts are up to date.
 
-  Still waiting for OC 0.6.0...
+  Please use [HeliPort](https://github.com/OpenIntelWireless/HeliPort) as WiFi Client.
 
-- 2020-06-26:
+<details>
+  <summary>2020-07-25</summary>
+  - Fixed USBPorts.kext for DW1820A. Updated IntelBluetooth, NoTouchID.
+  <br>
+  - Still waiting for OC 0.6.0...
+</details>
 
-  Updated VoodooI2C, itlwm
+<details>
+<summary>2020-06-26</summary>
+  - Updated VoodooI2C, itlwm
+  <br>
+  - Add Windows boot support in OC (Thanks [CalvinXu](https://github.com/CalvinXu17))
+</details>
 
-  Add Windows boot support in OC (Thanks [CalvinXu](https://github.com/CalvinXu17))
+<details>
+  <summary>2020-06-02</summary>
+  - Updated OpenCore 0.5.9. All kexts are up to date.
+  <br>
+  - Supprot macOS 10.15.5.
+  <br>
+  - Add itlwm.kext, edit your WiFi info in /OC/Kexts/itlwm.kext/Contents/Info.plist.
+</details>
 
-- 2020-06-02:
+<details>
+  <summary>2020-05-27</summary>
+  - Fixed battery management. Optimized dGPU blocking SSDT. (Helped by [vv-byte](https://github.com/vv-byte), thanks!)
+</details>
 
-  Updated OpenCore 0.5.9. All kexts are up to date.
+<details>
+  <summary>2020-05-24</summary>
+  - Add /Boot folder. WiFi guide updated.
+</details>
 
-  Supprot macOS 10.15.5.
+<details>
+  <summary>2020-05-15</summary>
+  - Fixed trackpad issue.
+</details>
 
-  Add itlwm.kext, edit your WiFi info in /OC/Kexts/itlwm.kext/Contents/Info.plist.
+<details>
+  <summary>2020-05-04</summary>
+  - OpenCore 0.5.8 Upadted. All kexts are up to date.
+  <br>
+  - Simplified config.plist. Remove ApfsDriverLoader.efi.
+  <br>
+  - Audio fix. iGPU frequence is now normal. Caps Lock light works again.
+</details>
 
-- 2020-05-27:
+<details>
+  <summary>2020-04-27</summary>
+  - CPU boost fixed. Simplified `config.plist` in `DeviceProperties`.
+</details>
 
-  Fixed battery management. Optimized dGPU blocking SSDT. (Helped by [vv-byte](https://github.com/vv-byte), thanks!)
+<details>
+  <summary>2020-04-21</summary>
+  - Add EFI for intall in Release, which changed `ShowPicker` and `Timeout`. No other differences between these two files. No need to update if you use Release v2.0.
+</details>
 
-- 2020-05-24:
+<details>
+  <summary>2020-04-13</summary>
+  - WiFi works again. Instruction down below.
+</details>
 
-  Add /Boot folder. WiFi guide updated.
+<details>
+  <summary>2020-04-13</summary>
+  - There are some problems of the WiFi. Don't know how to fix it, please wait.
+</details>
 
-- 2020-05-15:
+<details>
+  <summary>2020-04-13</summary>
+  - After rebuilding my ACPI folder and fix my config.plist, Intel WiFi is FINALLY supported!!!
+  <br>
+  - Please check https://github.com/zxystd/itlwm and enjoy!!!
+</details>
 
-  Fixed trackpad issue.
+<details>
+  <summary>2020-04-11</summary>
+  - Updated to MacOS 10.15.4 19E287. Changed OpenCore to offical release 0.5.7 ver. and fixed the structure of Config.plist.
+  <br>
+  - Updated Lilu, VirtualSMC, AppleALC, WhateverGreen, SMCBatteryManager, NVMeFix.
+  <br>
+  - Customized and updated IntelBluetoothFirmware, now the size is much smaller. Updated IntelBluetoothInjector.
+</details>
 
-- 2020-05-04:
+<details>
+  <summary>2020-03-31</summary>
+  - Deleted SSDT-USBX and added USBPower.kext.
+</details>
 
-  OpenCore 0.5.8 Upadted. All kexts are up to date.
-
-  Simplified config.plist. Remove ApfsDriverLoader.efi.
-
-  Audio fix. iGPU frequence is now normal. Caps Lock light works again.
-
-- 2020-04-27:
-
-  CPU boost fixed. Simplified `config.plist` in `DeviceProperties`.
-
-- 2020-04-21:
-
-  Add EFI for intall in Release, which changed `ShowPicker` and `Timeout`. No other differences between these two files. No need to update if you use Release v2.0.
-
-- 2020-04-13:
-
-  WiFi works again. Instruction down below.
-
-- 2020-04-13: 
-
-  There are some problems of the WiFi. Don't know how to fix it, please wait.
-
-- 2020-04-13: 
-
-  After rebuilding my ACPI folder and fix my config.plist, Intel WiFi is FINALLY supported!!!
-
-  Please check https://github.com/zxystd/itlwm and enjoy!!!
-
-- 2020-04-11: 
-
-  Updated to MacOS 10.15.4 19E287. Changed OpenCore to offical release 0.5.7 ver. and fixed the structure of Config.plist.
-
-  Updated Lilu, VirtualSMC, AppleALC, WhateverGreen, SMCBatteryManager, NVMeFix.
-
-  Customized and updated IntelBluetoothFirmware, now the size is much smaller. Updated IntelBluetoothInjector.
-
-- 2020-03-31: Deleted SSDT-USBX and added USBPower.kext.
-
-- 2020-03-28: I found that the Caps Lock light work perfectly after the lastest update!
-
+<details>
+  <summary>2020-03-28</summary>
+  - I found that the Caps Lock light work perfectly after the lastest update!
+</details>
 
 ## Configuration
 
@@ -148,7 +172,7 @@ Everything else is set default.
 - Trackpad
 - WebCam
 - Bluetooth (With On/Off buttom)
-- Wi-Fi (Supported by [itlwm](https://github.com/zxystd/itlwm))
+- Wi-Fi (Supported by [itlwm](https://github.com/OpenIntelWireless/itlwm))
 
 ## Not Working
 

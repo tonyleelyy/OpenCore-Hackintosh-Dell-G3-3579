@@ -1,18 +1,18 @@
 # OpenCore Hackintosh for Dell G3 3579
 
 [![macOS](https://img.shields.io/badge/macOS-10.15.6-orange)](https://www.apple.com/macos/catalina/)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.5.9-9cf)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-9cf)](https://github.com/acidanthera/OpenCorePkg)
 [![license](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 <img align="right" src="https://support.apple.com/content/dam/edam/applecare/images/en_US/macos/psp-mini-hero-macos-high-sierra-whats-new_2x.png" alt="Critter" width="250">
 
 [English](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README.md) | 中文
 
-### 最新的Release：[v3.2](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v3.2)
+### 最新的Release：[v4.0](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v4.0)
 
 **macOS版本：10.15.6**
 
-**OpenCore版本：[0.5.9 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.9)**
+**OpenCore版本：[0.6.0 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.0)**
 
 本 OpenCore 黑苹果项目适配 i5-8300H，GTX1050，没有USB Type-C版本的Dell G3 3579。
 
@@ -25,81 +25,104 @@
 > [CalvinXu](https://github.com/CalvinXu17) 提供了 OC 启动 Windows 的方法，感谢。
 
 ## 更新
-- 2020-07-25：
+- 2020-08-04
 
-  为使用 DW1820A 的朋友重新定制了USBPorts。更新了 IntelBluetooth，NoTouchID。
+  更新至 OC 0.6.0 正式版。所有驱动更至最新。
 
-  在 OC 0.6.0 和 Big Sur 正式版出来之前可能都不会有大更新了，能完善的都已经完善了~
+  请使用 HeliPort 作为 WiFi 客户端。
 
-- 2020-06-26：
+<details>
+  <summary>2020-07-25</summary>
+  - 为使用 DW1820A 的朋友重新定制了USBPorts。更新了 IntelBluetooth，NoTouchID。
+  <br>
+  - 在 OC 0.6.0 和 Big Sur 正式版出来之前可能都不会有大更新了，能完善的都已经完善了~
+</details>
 
-  更新了 VoodooI2C 和 itlwm
+<details>
+<summary>2020-06-26</summary>
+  - 更新了 VoodooI2C 和 itlwm
+  <br>
+  - 增加了 OC 启动 Windows 支持（感谢 [CalvinXu](https://github.com/CalvinXu17)）
+</details>
 
-  增加了 OC 启动 Windows 支持（感谢 [CalvinXu](https://github.com/CalvinXu17)）
+<details>
+  <summary>2020-06-02</summary>
+  - 更新至 OpenCore 0.5.9，顺带更新驱动，开始进入慢速更新状态。
+  <br>
+  - 支持 macOS 10.15.5
+  <br>
+  - 添加了 itlwm.kext 以驱动WiFi，请在 /OC/Kexts/itlwm.kext/Contents/Info.plist 里添加自己的WiFi信息。
+</details>
 
-- 2020-06-02：
+<details>
+  <summary>2020-05-27</summary>
+  - 修复了节能五项（笔记本只有四项），优化了禁用独显的SSDT。（[vv-byte](https://github.com/vv-byte) 协助了此次更新，感谢）
+</details>
 
-  更新至 OpenCore 0.5.9，顺带更新驱动，开始进入慢速更新状态。
+<details>
+  <summary>2020-05-24</summary>
+  - 添加了 /Boot 文件夹，请尽量使用 BOOTx64.efi 来引导。更新了 WiFi 驱动教程。
+</details>
 
-  支持 macOS 10.15.5
+<details>
+  <summary>2020-05-15</summary>
+  - 修复了触控板无法使用的问题。
+</details>
 
-  添加了 itlwm.kext 以驱动WiFi，请在 /OC/Kexts/itlwm.kext/Contents/Info.plist 里添加自己的WiFi信息。
+<details>
+  <summary>2020-05-04</summary>
+  - OpenCore 0.5.8 更新。所有驱动更新到最新版本。
+  <br>
+  - 继续精简 config.plist，OC 更新移除 ApfsDriverLoader.efi。
+  <br>
+  - 音频修复（貌似不会偶尔没声音了）。核显频率恢复正常。大小写灯恢复正常。
+</details>
 
-- 2020-05-27：
+<details>
+  <summary>2020-04-27</summary>
+  - CPU 变频修复，通过重写 `DeviceProperties` 精简了 `config.plist`。
+</details>
 
-  修复了节能五项（笔记本只有四项），优化了禁用独显的SSDT。（[vv-byte](https://github.com/vv-byte) 协助了此次更新，感谢）
+<details>
+  <summary>2020-04-21</summary>
+  - 在新的 Release 中添加了供安装使用的 EFI，仅改变了 `ShowPicker` 和 `Timeout` 的值，其他无变化。使用 Release v2.0 的朋友无需更新。
+</details>
 
-- 2020-05-24：
+<details>
+  <summary>2020-04-13</summary>
+  - WiFi可以重新工作了，使用指南请看下方。
+</details>
 
-  添加了 /Boot 文件夹，请尽量使用 BOOTx64.efi 来引导。更新了 WiFi 驱动教程。
+<details>
+  <summary>2020-04-13</summary>
+  - 使用WiFi的过程中出现问题，暂时不知道如何解决，请耐心等候一下。
+</details>
 
-- 2020-05-15：
+<details>
+  <summary>2020-04-13</summary>
+  - 在重新构建ACPI目录并修改 Config.plist 之后，终于！！！可以使用英特尔WiFi了！！！
+  <br>
+  - 请使用 https://github.com/zxystd/itlwm 尽情网上冲浪！！！
+</details>
 
-  修复了触控板无法使用的问题。
+<details>
+  <summary>2020-04-11</summary>
+  - 更新至 MacOS 10.15.4 19E287。更新 OpenCore 到官方Release 0.5.7 版本并完善了Config.plist的结构。
+  <br>
+  - 更新 Lilu, VirtualSMC, AppleALC, WhateverGreen, SMCBatteryManager, NVMeFix。
+  <br>
+  - 更新并定制了 IntelBluetoothFirmware，驱动文件大幅缩小。同时更新了 IntelBluetoothInjector。
+</details>
 
-- 2020-05-04:
+<details>
+  <summary>2020-03-31</summary>
+  - 删除了SSDT-USBX并添加了USBPower.kext以实现更好的USB驱动方法。
+</details>
 
-  OpenCore 0.5.8 更新。所有驱动更新到最新版本。
-
-  继续精简 config.plist，OC 更新移除 ApfsDriverLoader.efi。
-
-  音频修复（貌似不会偶尔没声音了）。核显频率恢复正常。大小写灯恢复正常。
-
-- 2020-04-27:
-
-  CPU 变频修复，通过重写 `DeviceProperties` 精简了 `config.plist`。
-
-- 2020-04-21：
-
-  在新的 Release 中添加了供安装使用的 EFI，仅改变了 `ShowPicker` 和 `Timeout` 的值，其他无变化。使用 Release v2.0 的朋友无需更新。
-
-- 2020-04-13：
-
-  WiFi可以重新工作了，使用指南请看下方。
-
-- 2020-04-13：
-
-  使用WiFi的过程中出现问题，暂时不知道如何解决，请耐心等候一下。
-
-- 2020-04-13：
-
-  在重新构建ACPI目录并修改 Config.plist 之后，终于！！！可以使用英特尔WiFi了！！！
-
-  请使用 https://github.com/zxystd/itlwm 尽情网上冲浪！！！
-
-- 2020-04-11：
-
-  更新至 MacOS 10.15.4 19E287。更新 OpenCore 到官方Release 0.5.7 版本并完善了Config.plist的结构。
-
-  更新 Lilu, VirtualSMC, AppleALC, WhateverGreen, SMCBatteryManager, NVMeFix。
-
-  更新并定制了 IntelBluetoothFirmware，驱动文件大幅缩小。同时更新了 IntelBluetoothInjector。
-
-- 2020-03-31：删除了SSDT-USBX并添加了USBPower.kext以实现更好的USB驱动方法。
-
-- 2020-03-28：我发现更新到最新版本后，大小写灯已正常工作！
-
-
+<details>
+  <summary>2020-03-28</summary>
+  - 我发现更新到最新版本后，大小写灯已正常工作！
+</details>
 
 ## 电脑配置
 
@@ -149,7 +172,7 @@
 - 触摸板
 - 摄像头
 - 蓝牙（带有蓝牙开关）
-- Wi-Fi（使用[itlwm](https://github.com/zxystd/itlwm))
+- Wi-Fi（使用[itlwm](https://github.com/OpenIntelWireless/itlwm))
 
 ## 不工作的部分
 
