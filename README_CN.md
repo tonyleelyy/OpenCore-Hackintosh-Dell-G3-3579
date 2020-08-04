@@ -1,6 +1,7 @@
 # OpenCore Hackintosh for Dell G3 3579
 
 [![macOS](https://img.shields.io/badge/macOS-10.15.6-orange)](https://www.apple.com/macos/catalina/)
+[![macOS](https://img.shields.io/badge/macOS beta-11.0.0-lightgrey)](https://www.apple.com.cn/macos/big-sur-preview/)
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-9cf)](https://github.com/acidanthera/OpenCorePkg)
 [![license](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
@@ -10,7 +11,7 @@
 
 ### 最新的Release：[v4.0](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v4.0)
 
-**macOS版本：10.15.6**
+**macOS版本：10.15.6 (11.0 Big Sur Supported)**
 
 **OpenCore版本：[0.6.0 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.0)**
 
@@ -23,13 +24,17 @@
 > [vv-byte](https://github.com/vv-byte) 协助解决了节能五项的问题，感谢。
 >
 > [CalvinXu](https://github.com/CalvinXu17) 提供了 OC 启动 Windows 的方法，感谢。
+>
+> 戴尔G3黑苹果交流群：1028961766，感谢群友帮忙测试。
 
 ## 更新
 - 2020-08-04
 
   更新至 OC 0.6.0 正式版。所有驱动更至最新。
 
-  请使用 HeliPort 作为 WiFi 客户端。
+  支持 macOS 11.0 Big Sur。
+  
+  请使用 [HeliPort](https://github.com/OpenIntelWireless/HeliPort) 作为 WiFi 客户端。
 
 <details>
   <summary>2020-07-25</summary>
@@ -163,7 +168,7 @@
 
 ## 工作的部分
 
-- macOS 10.15.6
+- macOS 10.15.6（支持11.0 Big Sur）
 - CPU（睿频4.0Ghz）
 - 核芯显卡
 - 有线网卡

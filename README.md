@@ -1,6 +1,7 @@
 # OpenCore Hackintosh for Dell G3 3579
 
 [![macOS](https://img.shields.io/badge/macOS-10.15.6-orange)](https://www.apple.com.cn/macos/catalina/)
+[![macOS](https://img.shields.io/badge/macOS beta-11.0.0-lightgrey)](https://www.apple.com.cn/macos/big-sur-preview/)
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-9cf)](https://github.com/acidanthera/OpenCorePkg)
 [![license](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
@@ -10,7 +11,7 @@ English | [中文](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-357
 
 ### Latest Release: [v4.0](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v4.0)
 
-**macOS Version: 10.15.6**
+**macOS Version: 10.15.6 (11.0 Big Sur Supported)**
 
 **OpenCore Version: [0.6.0 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.0)**
 
@@ -23,12 +24,16 @@ This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C versi
 > [vv-byte](https://github.com/vv-byte) helped solve the battery management problem, thanks!
 >
 > [CalvinXu](https://github.com/CalvinXu17) helped add Windows boot support, thanks!
+>
+> Dell G3 Hackintosh QQ Group: 1028961766
 
 ## Updates
 - 2020-08-04
 
   Updated OC 0.6.0 Official. All kexts are up to date.
 
+  Supported macOS 11.0 Big Sur.
+  
   Please use [HeliPort](https://github.com/OpenIntelWireless/HeliPort) as WiFi Client.
 
 <details>
@@ -163,7 +168,7 @@ Everything else is set default.
 
 ## Working
 
-- macOS 10.15.6
+- macOS 10.15.6 (11.0 Big Sur Supported)
 - CPU (Boost to 4.0Ghz)
 - iGPU
 - Ethernet
