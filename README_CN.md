@@ -2,7 +2,7 @@
 
 [![macOS](https://img.shields.io/badge/macOS-10.15.6-orange)](https://www.apple.com/macos/catalina/)
 [![macOS](https://img.shields.io/badge/macOS.beta-11.0.0-lightgrey)](https://www.apple.com.cn/macos/big-sur-preview/)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.0-9cf)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.1-9cf)](https://github.com/acidanthera/OpenCorePkg)
 [![license](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 <img align="right" src="https://support.apple.com/content/dam/edam/applecare/images/en_US/macos/psp-mini-hero-macos-high-sierra-whats-new_2x.png" alt="Critter" width="250">
@@ -13,7 +13,7 @@
 
 **macOS版本：10.15.6 (11.0 Big Sur Supported)**
 
-**OpenCore版本：[0.6.0 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.0)**
+**OpenCore版本：[0.6.1 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.1)**
 
 本 OpenCore 黑苹果项目适配 i5-8300H，GTX1050，没有USB Type-C版本的Dell G3 3579。
 
@@ -25,16 +25,27 @@
 >
 > [CalvinXu](https://github.com/CalvinXu17) 提供了 OC 启动 Windows 的方法，感谢。
 >
+> PyhNOVWH 提供了i2C触控板中断模式的SSDT，感谢。
+>
 > 戴尔G3黑苹果交流群：1028961766，感谢群友帮忙测试。
 
 ## 更新
-- 2020-08-04
+- 2020-09-08
 
-  更新至 OC 0.6.0 正式版。所有驱动更至最新。
-
-  支持 macOS 11.0 Big Sur。
+  更新至 OC 0.6.1 正式版。所有驱动更至最新。
+  
+  增加了i2C触控板中断模式的SSDT。（感谢PyhNOVWH）
   
   请使用 [HeliPort](https://github.com/OpenIntelWireless/HeliPort) 作为 WiFi 客户端。
+
+<details>
+  <summary>2020-08-04</summary>
+  - 更新至 OC 0.6.0 正式版。所有驱动更至最新。
+  <br>
+  - 支持 macOS 11.0 Big Sur。
+  <br>
+  - 请使用 [HeliPort](https://github.com/OpenIntelWireless/HeliPort) 作为 WiFi 客户端。
+</details>
 
 <details>
   <summary>2020-07-25</summary>
