@@ -9,7 +9,7 @@
 
 [English](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README.md) | 中文
 
-### 最新的Release：[v4.0](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v4.0)
+### 最新的Release：[v4.1](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v4.1)
 
 **macOS版本：10.15.6 (11.0 Big Sur Supported)**
 
@@ -30,13 +30,18 @@
 > 戴尔G3黑苹果交流群：1028961766，感谢群友帮忙测试。
 
 ## 更新
-- 2020-09-08
+- 2020-09-18
 
-  更新至 OC 0.6.1 正式版。所有驱动更至最新。
-  
-  增加了i2C触控板中断模式的SSDT。（感谢PyhNOVWH）
-  
-  请使用 [HeliPort](https://github.com/OpenIntelWireless/HeliPort) 作为 WiFi 客户端。
+  Bug 修复 [#30](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/issues/30)。
+
+  使用 [AirportItlwm](http://bbs.pcbeta.com/viewthread-1848662-1-1.html) 作为 WiFi 驱动（原生菜单，接力支持）
+
+<details>
+  <summary>2020-09-08</summary>
+  - 更新至 OC 0.6.1 正式版。所有驱动更至最新。
+  <br>
+  - 增加了i2C触控板中断模式的SSDT。（感谢PyhNOVWH）
+</details>
 
 <details>
   <summary>2020-08-04</summary>
@@ -188,7 +193,7 @@
 - 触摸板
 - 摄像头
 - 蓝牙（带有蓝牙开关）
-- Wi-Fi（使用[itlwm](https://github.com/OpenIntelWireless/itlwm))
+- Wi-Fi（使用 [AirportItlwm](http://bbs.pcbeta.com/viewthread-1848662-1-1.html)))
 
 ## 不工作的部分
 

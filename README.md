@@ -9,7 +9,7 @@
 
 English | [中文](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README_CN.md)（同步更新）
 
-### Latest Release: [v4.0](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v4.0)
+### Latest Release: [v4.1](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v4.1)
 
 **macOS Version: 10.15.6 (11.0 Big Sur Supported)**
 
@@ -30,13 +30,18 @@ This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C versi
 > Dell G3 Hackintosh QQ Group: 1028961766
 
 ## Updates
-- 2020-09-08
+- 2020-09-18
 
-  Updated OC 0.6.1 Official. All kexts are up to date.
+  Bug fixed [#30](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/issues/30).
   
-  Added SSDT for i2C trackpad. (Thanks PyhNOVWH)
-  
-  Please use [HeliPort](https://github.com/OpenIntelWireless/HeliPort) as WiFi Client.
+  Use [AirportItlwm](http://bbs.pcbeta.com/viewthread-1848662-1-1.html) as wifi driver.(Handoff supported)
+
+<details>
+  <summary>2020-09-08</summary>
+  - Updated OC 0.6.1 Official. All kexts are up to date.
+  <br>
+  - Added SSDT for i2C trackpad. (Thanks PyhNOVWH)
+</details>
 
 <details>
   <summary>2020-08-04</summary>
@@ -188,7 +193,7 @@ Everything else is set default.
 - Trackpad
 - WebCam
 - Bluetooth (With On/Off buttom)
-- Wi-Fi (Supported by [itlwm](https://github.com/OpenIntelWireless/itlwm))
+- Wi-Fi (Supported by [AirportItlwm](http://bbs.pcbeta.com/viewthread-1848662-1-1.html))
 
 ## Not Working
 
