@@ -30,11 +30,18 @@ This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C versi
 > Dell G3 Hackintosh QQ Group: 1028961766
 
 ## Updates
-- 2020-09-18
+- 2020-10-05
 
-  Bug fixed [#30](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/issues/30).
+  Add gui theme for OC.
   
-  Use [AirportItlwm](http://bbs.pcbeta.com/viewthread-1848662-1-1.html) as wifi driver.(Handoff supported)
+  Enhanced the stability of Bluetooth.
+
+<details>
+  <summary>2020-09-18</summary>
+  - Bug fixed [#30](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/issues/30).
+  <br>
+  - Use [AirportItlwm](http://bbs.pcbeta.com/viewthread-1848662-1-1.html) as wifi driver.(Handoff supported)
+</details>
 
 <details>
   <summary>2020-09-08</summary>

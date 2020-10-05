@@ -30,11 +30,18 @@
 > 戴尔G3黑苹果交流群：1028961766，感谢群友帮忙测试。
 
 ## 更新
-- 2020-09-18
+- 2020-10-05
 
-  Bug 修复 [#30](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/issues/30)。
+  增加了原生可视化界面
 
-  使用 [AirportItlwm](http://bbs.pcbeta.com/viewthread-1848662-1-1.html) 作为 WiFi 驱动（原生菜单，接力支持）
+  提升了蓝牙稳定性（存疑） 
+
+<details>
+  <summary>2020-09-18</summary>
+  - Bug 修复 [#30](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/issues/30)。
+  <br>
+  - 使用 [AirportItlwm](http://bbs.pcbeta.com/viewthread-1848662-1-1.html) 作为 WiFi 驱动（原生菜单，接力支持）
+</details>
 
 <details>
   <summary>2020-09-08</summary>
