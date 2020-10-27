@@ -1,19 +1,19 @@
 # OpenCore Hackintosh for Dell G3 3579
 
-[![macOS](https://img.shields.io/badge/macOS-10.15.6-orange)](https://www.apple.com/macos/catalina/)
-[![macOS](https://img.shields.io/badge/macOS.beta-11.0.0-lightgrey)](https://www.apple.com.cn/macos/big-sur-preview/)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.1-9cf)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS](https://img.shields.io/badge/macOS-10.15-orange)](https://www.apple.com/macos/catalina/)
+[![macOS](https://img.shields.io/badge/macOS.beta-11.0-lightgrey)](https://www.apple.com.cn/macos/big-sur-preview/)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.2-9cf)](https://github.com/acidanthera/OpenCorePkg)
 [![license](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 <img align="right" src="https://support.apple.com/content/dam/edam/applecare/images/en_US/macos/psp-mini-hero-macos-high-sierra-whats-new_2x.png" alt="Critter" width="250">
 
 [English](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README.md) | 中文
 
-### 最新的Release：[v4.1](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v4.1)
+### 最新的Release：[v4.2](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v4.2)
 
-**macOS版本：10.15.6 (11.0 Big Sur Supported)**
+**macOS版本：10.15 (11.0 Big Sur Supported)**
 
-**OpenCore版本：[0.6.1 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.1)**
+**OpenCore版本：[0.6.2 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.1)**
 
 本 OpenCore 黑苹果项目适配 i5-8300H，GTX1050，没有USB Type-C版本的Dell G3 3579。
 
@@ -30,11 +30,16 @@
 > 戴尔G3黑苹果交流群：1028961766，感谢群友帮忙测试。
 
 ## 更新
-- 2020-10-05
+- 2020-10-27
 
-  增加了原生可视化界面
-
-  提升了蓝牙稳定性（存疑） 
+  升级至 OC 0.6.2
+  
+<details>
+  <summary>2020-10-05</summary>
+  - 增加了原生可视化界面
+  <br>
+  - 提升了蓝牙稳定性（存疑） 
+</details>
 
 <details>
   <summary>2020-09-18</summary>
@@ -191,7 +196,7 @@
 
 ## 工作的部分
 
-- macOS 10.15.6（支持11.0 Big Sur）
+- macOS 10.15（支持11.0 Big Sur）
 - CPU（睿频4.0Ghz）
 - 核芯显卡
 - 有线网卡
