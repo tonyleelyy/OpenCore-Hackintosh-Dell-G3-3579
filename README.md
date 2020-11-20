@@ -1,19 +1,18 @@
 # OpenCore Hackintosh for Dell G3 3579
 
-[![macOS](https://img.shields.io/badge/macOS-10.15-orange)](https://www.apple.com.cn/macos/catalina/)
-[![macOS](https://img.shields.io/badge/macOS.beta-11.0-lightgrey)](https://www.apple.com.cn/macos/big-sur-preview/)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.2-9cf)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS](https://img.shields.io/badge/macOS-11.0-orange)](https://www.apple.com.cn/macos/big-sur-preview/)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.3-9cf)](https://github.com/acidanthera/OpenCorePkg)
 [![license](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 <img align="right" src="https://support.apple.com/content/dam/edam/applecare/images/en_US/macos/psp-mini-hero-macos-high-sierra-whats-new_2x.png" alt="Critter" width="250">
 
 English | [中文](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/blob/master/README_CN.md)（同步更新）
 
-### Latest Release: [v4.2](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v4.2)
+### Latest Release: [v4.3](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v4.3)
 
-**macOS Version: 10.15 (11.0 Big Sur Supported)**
+**macOS Version: 11.0.1**
 
-**OpenCore Version: [0.6.2 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.2)**
+**OpenCore Version: [0.6.3 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.3)**
 
 This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C version of Dell G3 3579.
 
@@ -30,9 +29,15 @@ This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C versi
 > Dell G3 Hackintosh QQ Group: 1028961766
 
 ## Updates
-- 2020-10-27
+- 2020-11-20
 
+  Fixed issue [#38](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/issues/38)
+
+  OC 0.6.3 updated.
+<details>
+  <summary>2020-10-27</summary>
   OC 0.6.2 updated.
+</details>
 
 <details>
   <summary>2020-10-05</summary>
@@ -196,7 +201,7 @@ Everything else is set default.
 
 ## Working
 
-- macOS 10.15 (11.0 Big Sur Supported)
+- macOS 11.0.1
 - CPU (Boost to 4.0Ghz)
 - iGPU
 - Ethernet
