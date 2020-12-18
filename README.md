@@ -28,6 +28,10 @@ This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C versi
 >
 > Dell G3 Hackintosh QQ Group: 1028961766
 
+Helpful Tips: 
+
+- If your computer can't wake from hibernate, disable power nap from System Preferences>Energy Saver. (Credit [DongRih](https://github.com/DongRih))
+
 ## Updates
 - 2020-11-20
 
