@@ -1,7 +1,7 @@
 # OpenCore Hackintosh for Dell G3 3579
 
-[![macOS](https://img.shields.io/badge/macOS-11.0-orange)](https://www.apple.com.cn/macos/big-sur-preview/)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.3-9cf)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS](https://img.shields.io/badge/macOS-11.2-orange)](https://www.apple.com.cn/macos/big-sur-preview/)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.7-9cf)](https://github.com/acidanthera/OpenCorePkg)
 [![license](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 <img align="right" src="https://support.apple.com/content/dam/edam/applecare/images/en_US/macos/psp-mini-hero-macos-high-sierra-whats-new_2x.png" alt="Critter" width="250">
@@ -10,9 +10,9 @@
 
 ### 最新的Release：[v4.3](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v4.3)
 
-**macOS版本：11.0.1**
+**macOS版本：11.2.2**
 
-**OpenCore版本：[0.6.3 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.3)**
+**OpenCore版本：[0.6.7 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.7)**
 
 本 OpenCore 黑苹果项目适配 i5-8300H，GTX1050，没有USB Type-C版本的Dell G3 3579。
 
@@ -33,11 +33,16 @@ Tips：
 - 如果你的电脑无法从睡眠中被唤醒，在 系统偏好设置>节能 中关闭小憩。（感谢 [DongRih](https://github.com/DongRih)）
 
 ## 更新
-- 2020-11-20
-
-  修复了issue [#38](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/issues/38)
+- 2021-03-02
   
-  升级至 OC 0.6.3
+  升级至 OC 0.6.7，驱动升级。
+  
+<details>
+  <summary>2020-11-20</summary>
+  - 修复了issue [#38](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/issues/38)
+  <br>
+  - 升级至 OC 0.6.3
+</details>
 
 <details>
   <summary>2020-10-27</summary>
@@ -206,7 +211,7 @@ Tips：
 
 ## 工作的部分
 
-- macOS 11.0.1
+- macOS 11.2.2
 - CPU（睿频4.0Ghz）
 - 核芯显卡
 - 有线网卡

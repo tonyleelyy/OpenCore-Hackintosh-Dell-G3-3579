@@ -1,7 +1,7 @@
 # OpenCore Hackintosh for Dell G3 3579
 
-[![macOS](https://img.shields.io/badge/macOS-11.0-orange)](https://www.apple.com.cn/macos/big-sur-preview/)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.3-9cf)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS](https://img.shields.io/badge/macOS-11.2-orange)](https://www.apple.com.cn/macos/big-sur-preview/)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.7-9cf)](https://github.com/acidanthera/OpenCorePkg)
 [![license](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 <img align="right" src="https://support.apple.com/content/dam/edam/applecare/images/en_US/macos/psp-mini-hero-macos-high-sierra-whats-new_2x.png" alt="Critter" width="250">
@@ -10,9 +10,9 @@ English | [中文](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-357
 
 ### Latest Release: [v4.3](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/releases/tag/v4.3)
 
-**macOS Version: 11.0.1**
+**macOS Version: 11.2.2**
 
-**OpenCore Version: [0.6.3 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.3)**
+**OpenCore Version: [0.6.7 Official](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.7)**
 
 This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C version of Dell G3 3579.
 
@@ -33,11 +33,17 @@ Helpful Tips:
 - If your computer can't wake from hibernate, disable power nap from System Preferences>Energy Saver. (Credit [DongRih](https://github.com/DongRih))
 
 ## Updates
-- 2020-11-20
+- 2021-03-02
 
-  Fixed issue [#38](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/issues/38)
+  OC 0.6.7 & kexts updated.
+  
+<details>
+  <summary>2020-11-20</summary>
+  - Fixed issue [#38](https://github.com/tonyleelyy/OpenCore-Hackintosh-Dell-G3-3579/issues/38)
+  <br>
+  - OC 0.6.3 updated.
+</details>
 
-  OC 0.6.3 updated.
 <details>
   <summary>2020-10-27</summary>
   OC 0.6.2 updated.
@@ -205,7 +211,7 @@ Everything else is set default.
 
 ## Working
 
-- macOS 11.0.1
+- macOS 11.2.2
 - CPU (Boost to 4.0Ghz)
 - iGPU
 - Ethernet
