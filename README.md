@@ -28,9 +28,8 @@ This OpenCore hackintosh repo is made for i5-8300H, GTX1050, no USB Type-C versi
 >
 > Dell G3 Hackintosh QQ Group: 1028961766
 
-Helpful Tips: 
-
-- If your computer can't wake from hibernate, disable power nap from System Preferences>Energy Saver. (Credit [DongRih](https://github.com/DongRih))
+Try this EFI for further updates and Thunderbolt supports:(Credit: CalvinXu)
+https://github.com/CalvinXu17/OpenCore-Dell-G3-3579-1060mq
 
 ## Updates
 - 2021-03-02
