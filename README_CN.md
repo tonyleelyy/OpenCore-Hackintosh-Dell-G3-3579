@@ -28,9 +28,9 @@
 >
 > 戴尔G3黑苹果交流群：1028961766，感谢群友帮忙测试。
 
-Tips：
+请使用这个EFI以获得新版本和雷电接口的支持：（作者：CalvinXu）
 
-- 如果你的电脑无法从睡眠中被唤醒，在 系统偏好设置>节能 中关闭小憩。（感谢 [DongRih](https://github.com/DongRih)）
+https://github.com/CalvinXu17/OpenCore-Dell-G3-3579-1060mq
 
 ## 更新
 - 2021-03-02
